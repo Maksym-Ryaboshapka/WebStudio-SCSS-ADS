@@ -1,0 +1,31 @@
+body {
+    font-family: Roboto;
+}
+
+.logo {
+    font-family: Raleway;
+}
+
+.first-header-logo-span {
+    color: #2196F3;
+}
+
+.second-header-logo-span {
+    color: black;
+}
+
+.first-footer-logo-span {
+    color: #2196F3;
+}
+
+.second-footer-logo-span {
+    color: white;
+}
+
+.mail:hover {
+    color: #2196F3;
+}
+
+.studio-header:hover {
+    color: #2196F3;
+}
