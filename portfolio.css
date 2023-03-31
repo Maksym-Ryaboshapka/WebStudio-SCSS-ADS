@@ -4,6 +4,7 @@ body {
 
 .logo {
     font-family: Raleway;
+    font-size: 26px;
 }
 
 .first-header-logo-span {
@@ -12,6 +13,32 @@ body {
 
 .second-header-logo-span {
     color: black;
+}
+
+.btn-nav {
+    font-size: 16px;
+}
+
+.btn-all {
+    font-size: 16px;
+}
+
+.btn-all:hover {
+    background-color: #2196F3;
+    font-size: 16px;
+}
+
+.btn-all:focus {
+    background-color: #2196F3;
+    font-size: 16px;
+}
+
+.title-h2 {
+    font-size: 18px;
+}
+
+.title-paragraph {
+    font-size: 16px;
 }
 
 .first-footer-logo-span {

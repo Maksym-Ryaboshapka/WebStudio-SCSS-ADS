@@ -53,6 +53,15 @@ body {
     color: #2196F3;
 }
 
+.mail:focus {
+    color: #2196F3;
+}
+
+
 .studio-header:hover {
+    color: #2196F3;
+}
+
+.studio-header:focus {
     color: #2196F3;
 }
