@@ -1,0 +1,181 @@
+body {
+    font-family: Roboto;
+}
+
+.logo {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3%;
+}
+
+.first-header-logo-span {
+    color: #2196F3;
+}
+
+.second-header-logo-span {
+    color: #000000;
+}
+
+.nav-header {
+    font-size: 14px;
+    color: #212121;
+    list-style-type: none;
+    letter-spacing: 2%;
+}
+
+.nav-header:hover {
+    font-size: 14px;
+    color: #2196F3;
+    list-style-type: none;
+    letter-spacing: 2%;
+}
+
+.nav-header:focus {
+    font-size: 14px;
+    color: #2196F3;
+    list-style-type: none;
+    letter-spacing: 2%;
+}
+
+.mail-header {
+    color: #757575;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+
+.mail-header:hover {
+    color: #2196F3;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+
+.mail-header:focus {
+    color: #2196F3;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+
+.tel-header {
+    color: #757575;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+
+.tel-header:hover {
+    color: #2196F3;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+
+.tel-header:focus {
+    color: #2196F3;
+    font-size: 14px;
+    letter-spacing: 2%;
+}
+
+.main {
+    background-color: #2F303A;
+}
+
+.main-h1 {
+    font-size: 44px;
+    color: #FFFFFF;
+    letter-spacing: 6%;
+    line-height: 1.36;
+    text-align: center;
+}
+
+.main-btn {
+    font-size: 16px;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    letter-spacing: 6%;
+    line-height: 1.87;
+}
+
+.tytles-h3-section {
+    list-style-type: none;
+}
+
+.titles-h3 {
+    font-size: 14px;
+    letter-spacing: 3%;
+    font-weight: 700;
+    color: #212121;
+}
+
+.titles-description {
+    font-size: 14px;
+    letter-spacing: 3%;
+    line-height: 1.71;
+    color: #757575;
+}
+
+.our-classes-h2 {
+    font-size: 36px;
+    color: #212121;
+    letter-spacing: 3%;
+    text-align: center;
+}
+
+.our-classes-list {
+    list-style-type: none;
+}
+
+.our-team-h2 {
+    font-size: 36px;
+    color: #212121;
+    letter-spacing: 3%;
+    text-align: center;
+}
+
+.our-team-list {
+    list-style-type: none;
+}
+
+.name-people {
+    font-size: 16px;
+    color: #212121;
+    letter-spacing: 3%;
+}
+
+.job-people {
+    font-size: 16px;
+    color: #757575;
+    letter-spacing: 3%;
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+.first-footer-logo-span {
+    color: #2196F3;
+}
+
+.second-footer-logo-span {
+    color: #FFFFFF;
+}
+
+.adress {
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 3%;
+    line-height: 1.71;
+}
+
+.mail-footer {
+    color: rgba(100, 100, 100, 60%);
+    font-size: 14px;
+    letter-spacing: 3%;
+    line-height: 1.71;
+}
+
+.tel-footer {
+    color: rgba(100, 100, 100, 60%);
+    font-size: 14px;
+    letter-spacing: 3%;
+    line-height: 1.71;
+}
