@@ -5,6 +5,8 @@ body {
 .logo {
     font-family: Raleway;
     font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 3%;
 }
 
 .first-header-logo-span {
