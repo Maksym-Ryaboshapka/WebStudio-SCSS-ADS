@@ -112,6 +112,11 @@ body {
     color: #757575;
 }
 
+.photos-classes {
+    width: 370px;
+    height: 294px;
+}
+
 .our-classes-h2 {
     font-size: 36px;
     color: #212121;
@@ -132,6 +137,11 @@ body {
 
 .our-team-list {
     list-style-type: none;
+}
+
+.photo-of-persone {
+    width: 270px;
+    height: 250px;
 }
 
 .name-people {
