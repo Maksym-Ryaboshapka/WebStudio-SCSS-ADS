@@ -8,7 +8,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.19;
 }
 
@@ -18,7 +18,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.19;
 }
 
@@ -29,7 +29,7 @@ body {
 .header-page {
     color: #212121;
     font-size: 14px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     line-height: 1.14;
     text-decoration: none;
 }
@@ -37,7 +37,7 @@ body {
 .header-page:hover {
     color: #2196F3;
     font-size: 14px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     line-height: 1.14;
     text-decoration: none;
 }
@@ -45,7 +45,7 @@ body {
 .header-page:focus {
     color: #2196F3;
     font-size: 14px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     line-height: 1.14;
     text-decoration: none;
 }
@@ -75,20 +75,20 @@ body {
 
 .navigation-btn {
     color: #212121;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.62;
 }
 
 .navigation-btn:hover {
     color: #FFFFFF;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.62;
     background-color: #2196F3;
 }
 
 .navigation-btn:focus {
     color: #FFFFFF;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.62;
     background-color: #2196F3;
 }
@@ -105,7 +105,7 @@ body {
 .images-title {
     color: #212121;
     font-size: 18px;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
     font-weight: 700;
     line-height: 2;
 }
@@ -127,7 +127,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.19;
 }
 
@@ -135,7 +135,7 @@ body {
     color: #FFFFFF;
     font-size: 14px;
     font-style: normal;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.71;
 }
 
@@ -146,7 +146,7 @@ body {
 .footer-contact {
     color: rgba(100, 100, 100, 60%);
     font-size: 14px;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 1.71;
     text-decoration: none;
 }
