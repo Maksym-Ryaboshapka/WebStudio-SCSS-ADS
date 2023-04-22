@@ -2,12 +2,19 @@ body {
     font-family: 'Roboto';
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .logo {
     color: #2196F3;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    text-decoration: none;
     letter-spacing: 0.03em;
     line-height: 1.19;
 }
@@ -17,13 +24,8 @@ body {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    text-decoration: none;
     letter-spacing: 0.03em;
     line-height: 1.19;
-}
-
-.header-pages {
-    list-style: none;
 }
 
 .header-page {
@@ -31,7 +33,6 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
-    text-decoration: none;
 }
 
 .header-page:hover {
@@ -39,7 +40,6 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
-    text-decoration: none;
 }
 
 .header-page:focus {
@@ -47,26 +47,18 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
-    text-decoration: none;
-}
-
-.header-contacts {
-    list-style-type: none;
 }
 
 .header-contact-link {
     color: #757575;
-    text-decoration: none;
 }
 
 .header-contact-link:hover {
     color: #2196F3;
-    text-decoration: none;
 }
 
 .header-contact-link:focus {
     color: #2196F3;
-    text-decoration: none;
 }
 
 .hero {
@@ -89,10 +81,6 @@ body {
     line-height: 1.87;
     font-weight: 700;
     background-color: #2196F3;
-}
-
-.adventage-list {
-    list-style-type: none;
 }
 
 .adventage-title {
@@ -119,10 +107,6 @@ body {
     text-align: center;
 }
 
-.classes-list {
-    list-style-type: none;
-}
-
 .classes-img {
     width: 370px;
     height: 294px;
@@ -135,10 +119,6 @@ body {
     line-height: 1.16;
     color: #212121;
     text-align: center;
-}
-
-.team-list {
-    list-style-type: none;
 }
 
 .team-img {
@@ -169,7 +149,6 @@ body {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    text-decoration: none;
     letter-spacing: 0.03em;
     line-height: 1.19;
 }
@@ -182,14 +161,9 @@ body {
     line-height: 1.71;
 }
 
-.footer-contacts {
-    list-style-type: none;
-}
-
 .footer-contact {
     color: rgba(100, 100, 100, 60%);
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.71;
-    text-decoration: none;
 }
