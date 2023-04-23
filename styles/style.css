@@ -1,6 +1,10 @@
-body {
+/* шрифти */
+
+* {
     font-family: 'Roboto';
 }
+
+/* контейнер */
 
 .container {
     width: 1200px;
@@ -10,6 +14,8 @@ body {
     margin-right: auto;
 }
 
+/* лого */
+
 .logo {
     color: #2196F3;
     font-family: 'Raleway';
@@ -18,6 +24,8 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.19;
 }
+
+/* секція хедер */
 
 .header-logo {
     color: #000000;
@@ -61,6 +69,8 @@ body {
     color: #2196F3;
 }
 
+/* секція герой */
+
 .hero {
     background-color: #2F303A;
 }
@@ -83,6 +93,8 @@ body {
     background-color: #2196F3;
 }
 
+/* секція переваги */
+
 .adventage-title {
     color: #212121;
     font-size: 14px;
@@ -98,6 +110,8 @@ body {
     line-height: 1.71;
 }
 
+/* секція чим ми займаємось */
+
 .classes-title {
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -111,6 +125,8 @@ body {
     width: 370px;
     height: 294px;
 }
+
+/* секція наша команда */
 
 .team-title {
     font-size: 36px;
@@ -139,6 +155,8 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.18;
 }
+
+/* секція футер */
 
 .footer {
     background-color: #2F303A;

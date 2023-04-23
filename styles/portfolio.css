@@ -1,6 +1,10 @@
-body {
+/* шрифти */
+
+* {
     font-family: 'Roboto';
 }
+
+/* контейнер */
 
 .container {
     width: 1200px;
@@ -10,6 +14,8 @@ body {
     margin-right: auto;
 }
 
+/* лого */
+
 .logo {
     color: #2196F3;
     font-family: 'Raleway';
@@ -18,6 +24,8 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.19;
 }
+
+/* секція хедер */
 
 .header-logo {
     color: #000000;
@@ -61,6 +69,8 @@ body {
     color: #2196F3;
 }
 
+/* секція навігація */
+
 .navigation-btn {
     color: #212121;
     letter-spacing: 0.03em;
@@ -81,12 +91,14 @@ body {
     background-color: #2196F3;
 }
 
-.images-img {
+/* секція галерея */
+
+.gallery-img {
     width: 370px;
     height: 294px;
 }
 
-.images-title {
+.gallery-title {
     color: #212121;
     font-size: 18px;
     letter-spacing: 0.06em;
@@ -94,12 +106,14 @@ body {
     line-height: 2;
 }
 
-.images-description {
+.gallery-description {
     color: #757575;
     font-size: 16px;
     letter-spacing: 3%;
     line-height: 1.87;
 }
+
+/* секція футер */
 
 .footer {
     background-color: #2F303A;
