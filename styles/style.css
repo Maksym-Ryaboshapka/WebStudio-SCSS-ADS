@@ -4,9 +4,17 @@
     font-family: 'Roboto';
 }
 
+section,
+header,
+footer {
+    outline: solid green;
+}
+
 /* контейнер */
 
 .container {
+    outline: solid red;
+
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -73,6 +81,8 @@
 
 .hero {
     background-color: #2F303A;
+   padding-top: 200px;
+   padding-bottom: 280px;
 }
 
 .hero-title {
@@ -82,6 +92,7 @@
     letter-spacing: 0.06em;
     line-height: 1.36;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -95,12 +106,18 @@
 
 /* секція переваги */
 
+.adventage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .adventage-title {
     color: #212121;
     font-size: 14px;
     letter-spacing: 0.03em;
     font-weight: 700;
     line-height: 1.14;
+    margin-bottom: 10px;
 }
 
 .adventage-description {
