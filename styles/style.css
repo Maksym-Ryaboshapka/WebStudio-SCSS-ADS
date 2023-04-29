@@ -102,6 +102,7 @@ footer {
     line-height: 1.87;
     font-weight: 700;
     background-color: #2196F3;
+    border: none;
 }
 
 /* секція переваги */
@@ -136,6 +137,7 @@ footer {
     line-height: 1.16;
     color: #212121;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .classes-img {
@@ -144,6 +146,11 @@ footer {
 }
 
 /* секція наша команда */
+
+.team {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+}
 
 .team-title {
     font-size: 36px;
@@ -164,6 +171,8 @@ footer {
     letter-spacing: 0.03em;
     color: #212121;
     line-height: 1.18;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-description {
@@ -177,6 +186,7 @@ footer {
 
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
 }
 
 .footer-logo {
@@ -186,6 +196,7 @@ footer {
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.19;
+    margin-bottom: 20px;
 }
 
 .footer-adress {
@@ -194,9 +205,18 @@ footer {
     font-style: normal;
     letter-spacing: 0.03em;
     line-height: 1.71;
+    margin-bottom: 9px;
 }
 
-.footer-contact {
+.footer-contact1 {
+    color: rgba(255, 255, 255, 60%);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    margin-bottom: 9px;
+}
+
+.footer-contact2 {
     color: rgba(255, 255, 255, 60%);
     font-size: 14px;
     letter-spacing: 0.03em;
