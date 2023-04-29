@@ -85,6 +85,14 @@ footer {
    padding-bottom: 280px;
 }
 
+/* я задав max-width, але воно виглядало
+якось не зрозуміло, тому я зробив flex-box */
+
+.hero-flex {
+    display: flex;
+    justify-content: center;
+}
+
 .hero-title {
     color: #FFFFFF;
     text-align: center;
@@ -93,6 +101,7 @@ footer {
     line-height: 1.36;
     text-transform: uppercase;
     margin-bottom: 30px;
+    max-width: 696px;
 }
 
 .hero-btn {
