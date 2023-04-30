@@ -22,3 +22,7 @@ ul {
 img {
     display: block;
 }
+
+button {
+    padding: 0;
+}

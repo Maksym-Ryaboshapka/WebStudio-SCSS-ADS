@@ -83,6 +83,8 @@ footer {
     color: #212121;
     letter-spacing: 0.03em;
     line-height: 1.62;
+    border: 1px solid #F5F4FA;
+    border-radius: 4px;
 }
 
 .navigation-btn:hover {
@@ -90,6 +92,8 @@ footer {
     letter-spacing: 0.03em;
     line-height: 1.62;
     background-color: #2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
 }
 
 .navigation-btn:focus {
@@ -97,6 +101,8 @@ footer {
     letter-spacing: 0.03em;
     line-height: 1.62;
     background-color: #2196F3;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
 }
 
 /* секція галерея */
