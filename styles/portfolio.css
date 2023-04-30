@@ -85,6 +85,8 @@ footer {
     line-height: 1.62;
     border: 1px solid #F5F4FA;
     border-radius: 4px;
+    padding: 6px 25px;
+    background-color: #F5F4FA;
 }
 
 .navigation-btn:hover {
@@ -94,6 +96,7 @@ footer {
     background-color: #2196F3;
     border: 1px solid #2196F3;
     border-radius: 4px;
+    padding: 6px 25px;
 }
 
 .navigation-btn:focus {
@@ -103,6 +106,7 @@ footer {
     background-color: #2196F3;
     border: 1px solid #2196F3;
     border-radius: 4px;
+    padding: 6px 25px;
 }
 
 /* секція галерея */
