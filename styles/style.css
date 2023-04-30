@@ -4,8 +4,8 @@
     font-family: 'Roboto';
 }
 
-section,
 header,
+section,
 footer {
     outline: solid green;
 }
@@ -81,16 +81,8 @@ footer {
 
 .hero {
     background-color: #2F303A;
-   padding-top: 200px;
-   padding-bottom: 280px;
-}
-
-/* я задав max-width, але воно виглядало
-якось не зрозуміло, тому я зробив flex-box */
-
-.hero-flex {
-    display: flex;
-    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 
 .hero-title {

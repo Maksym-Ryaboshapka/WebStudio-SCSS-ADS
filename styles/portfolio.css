@@ -4,9 +4,17 @@
     font-family: 'Roboto';
 }
 
+header,
+section,
+footer {
+    outline: solid green;
+}
+
 /* контейнер */
 
 .container {
+    outline: solid red;
+
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -104,6 +112,8 @@
     letter-spacing: 0.06em;
     font-weight: 700;
     line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .gallery-description {
@@ -117,6 +127,7 @@
 
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
 }
 
 .footer-logo {
@@ -126,6 +137,7 @@
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.19;
+    margin-bottom: 20px;
 }
 
 .footer-adress {
@@ -134,10 +146,19 @@
     font-style: normal;
     letter-spacing: 0.03em;
     line-height: 1.71;
+    margin-bottom: 9px;
 }
 
-.footer-contact {
-    color: rgba(100, 100, 100, 60%);
+.footer-contact1 {
+    color: rgba(255, 255, 255, 60%);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    margin-bottom: 9px;
+}
+
+.footer-contact2 {
+    color: rgba(255, 255, 255, 60%);
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.71;
