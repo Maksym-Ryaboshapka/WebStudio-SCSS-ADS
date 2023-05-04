@@ -11,6 +11,7 @@ p {
 a {
     margin: 0;
     text-decoration: none;
+    display: block;
 }
 
 ul {

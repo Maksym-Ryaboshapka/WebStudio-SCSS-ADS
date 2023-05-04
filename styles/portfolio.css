@@ -22,9 +22,14 @@ footer {
     margin-right: auto;
 }
 
-/* лого */
+/* секція хедер */
 
-.logo {
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-logo2 {
     color: #2196F3;
     font-family: 'Raleway';
     font-weight: 700;
@@ -33,9 +38,7 @@ footer {
     line-height: 1.19;
 }
 
-/* секція хедер */
-
-.header-logo {
+.header-logo1 {
     color: #000000;
     font-family: 'Raleway';
     font-weight: 700;
@@ -83,7 +86,6 @@ footer {
     color: #212121;
     letter-spacing: 0.03em;
     line-height: 1.62;
-    border: 1px solid #F5F4FA;
     border-radius: 4px;
     padding: 6px 25px;
     background-color: #F5F4FA;
@@ -94,7 +96,6 @@ footer {
     letter-spacing: 0.03em;
     line-height: 1.62;
     background-color: #2196F3;
-    border: 1px solid #2196F3;
     border-radius: 4px;
     padding: 6px 25px;
 }
@@ -104,7 +105,6 @@ footer {
     letter-spacing: 0.03em;
     line-height: 1.62;
     background-color: #2196F3;
-    border: 1px solid #2196F3;
     border-radius: 4px;
     padding: 6px 25px;
 }
@@ -138,9 +138,20 @@ footer {
 .footer {
     background-color: #2F303A;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.footer-logo {
+.footer-logo2 {
+    color: #2196F3;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    margin-bottom: 20px;
+}
+
+.footer-logo1 {
     color: #FFFFFF;
     font-family: 'Raleway';
     font-weight: 700;
