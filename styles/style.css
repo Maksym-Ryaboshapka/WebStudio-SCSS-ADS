@@ -78,6 +78,13 @@
     line-height: 1.14;
 }
 
+.active-page {
+    color: #2196F3;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+}
+
 .header-contacts {
     display: flex;
     gap: 50px;
