@@ -4,6 +4,10 @@
     font-family: 'Roboto';
 }
 
+a {
+    cursor: pointer;
+}
+
 /* контейнер */
 
 .container {
@@ -40,6 +44,7 @@
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.19;
+    cursor: default;
 }
 
 .header-logo1 {
@@ -49,6 +54,7 @@
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.19;
+    cursor: default;
 }
 
 .header-pages {
@@ -213,6 +219,7 @@
     letter-spacing: 0.03em;
     line-height: 1.19;
     margin-bottom: 20px;
+    cursor: default;
 }
 
 .footer-logo1 {
@@ -223,6 +230,7 @@
     letter-spacing: 0.03em;
     line-height: 1.19;
     margin-bottom: 20px;
+    cursor: default;
 }
 
 .footer-adress {
