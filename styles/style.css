@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Roboto';
+    font-weight: 400;
 }
 
 /* контейнер */
@@ -63,6 +64,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
+    font-weight: 500;
 }
 
 .header-page:hover {
@@ -70,6 +72,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
+    font-weight: 500;
 }
 
 .header-page:focus {
@@ -77,6 +80,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
+    font-weight: 500;
 }
 
 .active-page {
@@ -84,6 +88,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
+    font-weight: 500;
 }
 
 .header-contacts {
@@ -95,14 +100,17 @@
 
 .header-link {
     color: #757575;
+    font-weight: 500;
 }
 
 .header-link:hover {
     color: #2196F3;
+    font-weight: 500;
 }
 
 .header-link:focus {
     color: #2196F3;
+    font-weight: 500;
 }
 
 /* секція герой */
@@ -128,6 +136,7 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     max-width: 696px;
+    font-weight: 900;
 }
 
 .hero-btn {
@@ -243,6 +252,7 @@
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: 500;
 }
 
 .team-description {
