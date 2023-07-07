@@ -116,7 +116,10 @@
 /* секція герой */
 
 .hero {
-    background-color: #2F303A;
+    background-image: url(../img/main/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -162,6 +165,33 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+}
+
+.adventage-item::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.adventage-item:nth-child(1)::before {
+    background-image: url(../img/main/adventage-1.png);
+}
+
+.adventage-item:nth-child(2)::before {
+    background-image: url(../img/main/adventage-2.png);
+}
+
+.adventage-item:nth-child(3)::before {
+    background-image: url(../img/main/adventage-3.png);
+}
+
+.adventage-item:nth-child(4)::before {
+    background-image: url(../img/main/adventage-4.png);
 }
 
 .adventage-title {
