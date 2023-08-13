@@ -15,6 +15,10 @@
     margin-right: auto;
 }
 
+.logo {
+    display: flex;
+}
+
 /* секція хедер */
 
 .header {
@@ -34,7 +38,7 @@
     align-items: center;
 }
 
-.header-logo2 {
+.header-span1 {
     color: #2196F3;
     font-family: 'Raleway';
     font-weight: 700;
@@ -43,7 +47,7 @@
     line-height: 1.19;
 }
 
-.header-logo1 {
+.header-span2 {
     color: #000000;
     font-family: 'Raleway';
     font-weight: 700;
@@ -59,6 +63,14 @@
     margin-left: 93px;
 }
 
+.active-page {
+    color: #2196F3;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    font-weight: 500;
+}
+
 .header-page {
     color: #212121;
     font-size: 14px;
@@ -69,26 +81,10 @@
 
 .header-page:hover {
     color: #2196F3;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    font-weight: 500;
 }
 
 .header-page:focus {
     color: #2196F3;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    font-weight: 500;
-}
-
-.active-page {
-    color: #2196F3;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    font-weight: 500;
 }
 
 .header-contacts {
@@ -105,18 +101,17 @@
 
 .header-link:hover {
     color: #2196F3;
-    font-weight: 500;
 }
 
 .header-link:focus {
     color: #2196F3;
-    font-weight: 500;
 }
 
 /* секція герой */
 
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) ,url(../img/main/hero-bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero-bg.webp);
+    background-color: #2F303A;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -179,19 +174,19 @@
 }
 
 .adventage-item:nth-child(1)::before {
-    background-image: url(../img/main/adventage-1.png);
+    background-image: url(../images/main/adventage-1.webp);
 }
 
 .adventage-item:nth-child(2)::before {
-    background-image: url(../img/main/adventage-2.png);
+    background-image: url(../images/main/adventage-2.webp);
 }
 
 .adventage-item:nth-child(3)::before {
-    background-image: url(../img/main/adventage-3.png);
+    background-image: url(../images/main/adventage-3.webp);
 }
 
 .adventage-item:nth-child(4)::before {
-    background-image: url(../img/main/adventage-4.png);
+    background-image: url(../images/main/adventage-4.webp);
 }
 
 .adventage-title {
@@ -301,7 +296,7 @@
     padding-bottom: 60px;
 }
 
-.footer-logo2 {
+.footer-span1 {
     color: #2196F3;
     font-family: 'Raleway';
     font-weight: 700;
@@ -311,7 +306,7 @@
     margin-bottom: 20px;
 }
 
-.footer-logo1 {
+.footer-span2 {
     color: #FFFFFF;
     font-family: 'Raleway';
     font-weight: 700;

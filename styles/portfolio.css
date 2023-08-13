@@ -15,6 +15,10 @@
     margin-right: auto;
 }
 
+.logo {
+    display: flex;
+}
+
 /* секція хедер */
 
 .header {
@@ -34,7 +38,7 @@
     align-items: center;
 }
 
-.header-logo2 {
+.header-span1 {
     color: #2196F3;
     font-family: 'Raleway';
     font-weight: 700;
@@ -43,7 +47,7 @@
     line-height: 1.19;
 }
 
-.header-logo1 {
+.header-span2 {
     color: #000000;
     font-family: 'Raleway';
     font-weight: 700;
@@ -69,18 +73,10 @@
 
 .header-page:hover {
     color: #2196F3;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    font-weight: 500;
 }
 
 .header-page:focus {
     color: #2196F3;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    font-weight: 500;
 }
 
 .active-page {
@@ -105,12 +101,10 @@
 
 .header-link:hover {
     color: #2196F3;
-    font-weight: 500;
 }
 
 .header-link:focus {
     color: #2196F3;
-    font-weight: 500;
 }
 
 /* секція наігація */
@@ -139,29 +133,15 @@
 }
 
 .navigation-btn:hover {
-    padding: 6px 21px 6px 23px;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    font-weight: 500;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .navigation-btn:focus {
-    padding: 6px 21px 6px 23px;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: #FFFFFF;
     background-color: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    font-weight: 500;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 /* секція галерея */
@@ -180,6 +160,14 @@
 .gallery-item {
     border: 1px solid #EEEEEE;
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.gallery-item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-container {
@@ -218,7 +206,7 @@
     padding-bottom: 60px;
 }
 
-.footer-logo2 {
+.footer-span1 {
     color: #2196F3;
     font-family: 'Raleway';
     font-weight: 700;
@@ -228,7 +216,7 @@
     margin-bottom: 20px;
 }
 
-.footer-logo1 {
+.footer-span2 {
     color: #FFFFFF;
     font-family: 'Raleway';
     font-weight: 700;
