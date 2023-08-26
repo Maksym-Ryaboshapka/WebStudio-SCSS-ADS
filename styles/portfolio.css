@@ -27,7 +27,7 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-flex {
+.header-container {
     display: flex;
     align-items: center;
 }
