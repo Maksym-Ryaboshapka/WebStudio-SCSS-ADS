@@ -5,6 +5,11 @@
     font-weight: 400;
 }
 
+*::selection {
+    color: #FFF;
+    background-color: #2196F3;
+}
+
 /* контейнер */
 
 .container {
@@ -63,6 +68,14 @@
     margin-left: 93px;
 }
 
+.active-page {
+    color: #2196F3;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    font-weight: 500;
+}
+
 .header-page {
     color: #212121;
     font-size: 14px;
@@ -79,14 +92,6 @@
     color: #2196F3;
 }
 
-.active-page {
-    color: #2196F3;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    font-weight: 500;
-}
-
 .header-contacts {
     display: flex;
     gap: 50px;
@@ -94,17 +99,31 @@
     margin-left: auto;
 }
 
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-contact:hover .header-icon {
+    fill: #2196F3;
+}
+
+.header-contact:focus .header-icon {
+    fill: #2196F3;
+}
+
+.header-contact:hover .header-link {
+    color: #2196F3;
+}
+
+.header-contact:focus .header-link {
+    color: #2196F3;
+}
+
 .header-link {
     color: #757575;
     font-weight: 500;
-}
-
-.header-link:hover {
-    color: #2196F3;
-}
-
-.header-link:focus {
-    color: #2196F3;
 }
 
 /* секція наігація */
@@ -206,6 +225,22 @@
     padding-bottom: 60px;
 }
 
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-flex2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-span1 {
     color: #2196F3;
     font-family: 'Raleway';
@@ -248,4 +283,39 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.71;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-box {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-box:hover {
+    background-color: #2196F3;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFF;
 }
