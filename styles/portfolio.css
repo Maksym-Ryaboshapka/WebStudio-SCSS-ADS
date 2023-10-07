@@ -105,6 +105,10 @@
     gap: 10px;
 }
 
+.header-icon {
+    fill: #757575;
+}
+
 .header-contact:hover .header-icon {
     fill: #2196F3;
 }
@@ -161,6 +165,7 @@
     color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    outline: none;
 }
 
 /* секція галерея */
@@ -300,7 +305,7 @@
     margin-bottom: 20px;
 }
 
-.footer-box {
+.footer-focus {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.10);
@@ -310,8 +315,13 @@
     border-radius: 50%;
 }
 
-.footer-box:hover {
+.footer-focus:hover {
     background-color: #2196F3;
+}
+
+.footer-focus:focus {
+    background-color: #2196F3;
+    outline: none;
 }
 
 .footer-icon {

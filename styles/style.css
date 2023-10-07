@@ -68,13 +68,13 @@
     margin-left: 93px;
 }
 
-.active-page {
+/* .active-page {
     color: #2196F3;
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
     font-weight: 500;
-}
+} */
 
 .header-page {
     color: #212121;
@@ -103,6 +103,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.header-icon {
+    fill: #757575;
 }
 
 .header-contact:hover .header-icon {
@@ -326,6 +330,7 @@
 
 .team-box:focus {
     background-color: #2196F3;
+    outline: none;
 }
 
 .team-box:hover .team-icon {
@@ -334,6 +339,7 @@
 
 .team-box:focus .team-icon {
     fill: #FFF;
+    outline: none;
 }
 
 .team-icon {
@@ -367,23 +373,29 @@
     justify-content: center;
 }
 
-.clients-item {
+.clients-focus {
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     padding: 16px 32px;
     cursor: pointer;
 }
 
-.clients-item:hover {
+.clients-focus:hover {
     border: 1px solid #2196F3;
 }
 
-.clients-item:focus {
+.clients-focus:focus {
     border: 1px solid #2196F3;
+    outline: none;
 }
 
-.clients-item:hover .clients-icon {
+.clients-focus:hover .clients-icon {
     fill: #2196F3;
+}
+
+.clients-focus:focus .clients-icon {
+    fill: #2196F3;
+    outline: none;
 }
 
 .clients-icon {
@@ -475,7 +487,7 @@
     margin-bottom: 20px;
 }
 
-.footer-box {
+.footer-focus {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.10);
@@ -485,8 +497,13 @@
     border-radius: 50%;
 }
 
-.footer-box:hover {
+.footer-focus:hover {
     background-color: #2196F3;
+}
+
+.footer-focus:focus {
+    background-color: #2196F3;
+    outline: none;
 }
 
 .footer-icon {
