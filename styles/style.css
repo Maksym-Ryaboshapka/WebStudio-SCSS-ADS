@@ -82,6 +82,7 @@
 
 .header-page:focus {
     color: #2196F3;
+    outline: none;
 }
 
 .header-contacts {
@@ -109,6 +110,7 @@
 
 .header-link:focus {
     color: #2196F3;
+    outline: none;
 }
 
 .header-link:hover .header-icon {
@@ -117,6 +119,7 @@
 
 .header-link:focus .header-icon {
     fill: #2196F3;
+    outline: none;
 }
 
 /* секція герой */

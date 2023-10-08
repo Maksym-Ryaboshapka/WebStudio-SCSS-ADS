@@ -82,6 +82,7 @@
 
 .header-page:focus {
     color: #2196F3;
+    outline: none;
 }
 
 .header-contacts {
@@ -109,6 +110,7 @@
 
 .header-link:focus {
     color: #2196F3;
+    outline: none;
 }
 
 .header-link:hover .header-icon {
@@ -117,6 +119,7 @@
 
 .header-link:focus .header-icon {
     fill: #2196F3;
+    outline: none;
 }
 
 /* секція наігація */
@@ -175,12 +178,13 @@
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.gallery-item:hover {
+.gallery-focus:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.gallery-item:focus {
+.gallery-focus:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    outline: none;
 }
 
 .gallery-container {
