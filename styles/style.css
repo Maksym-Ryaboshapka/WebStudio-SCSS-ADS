@@ -30,6 +30,11 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
 }
 
 .header-container {
@@ -243,9 +248,35 @@
     justify-content: center;
 }
 
+.classes-item {
+    position: relative;
+}
+
+.classes-focus {
+    cursor: default;
+    outline: none;
+}
+
 .classes-img {
     width: 370px;
     height: 294px;
+}
+
+.classes-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.80);
+    padding: 27px 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
 }
 
 /* секція наша команда */
