@@ -30,4 +30,23 @@ button {
     padding: 0;
     border: none;
     cursor: pointer;
+    display: block;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
 }
