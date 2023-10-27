@@ -21,14 +21,13 @@
 .modal-window {
     width: 528px;
     height: 581px;
-    outline: solid blue;
     position: fixed;
     top: 50%;
     left: 50%;
     background-color: #fff;
     transform: translate(-50%, -50%);
     z-index: 1001;
-    padding-top: 8px;
+    padding: 8px 8px 0 0;
     border-radius: 4px;
 }
 
@@ -150,7 +149,9 @@
     height: 15px;
     opacity: 0;
     position: absolute;
+    left: 55px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .modal-checkbox:checked+.modal-check {
@@ -172,6 +173,7 @@
     height: 15px;
     opacity: 0;
     position: absolute;
+    left: 55px;
 }
 
 .check-svg {
