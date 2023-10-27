@@ -158,6 +158,10 @@
     opacity: 1;
 }
 
+.modal-checkbox:checked ~ .modal-fake {
+    opacity: 0;
+}
+
 .modal-fake {
     width: 16px;
     height: 15px;
