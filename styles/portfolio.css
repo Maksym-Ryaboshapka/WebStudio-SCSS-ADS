@@ -214,6 +214,11 @@ body {
     outline: none;
 }
 
+.gallery-focus:hover .gallary-overflow .gallery-overlay,
+.gallery-focus:focus .gallary-overflow .gallery-overlay {
+    opacity: 1;
+}
+
 .gallery-container {
     padding-left: 24px;
     padding-bottom: 20px;
@@ -224,6 +229,28 @@ body {
 .gallery-img {
     width: 368px;
     height: 294px;
+}
+
+.gallary-overflow {
+    position: relative;
+}
+
+.gallery-overlay {
+    width: 370px;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.90);
+    padding: 63px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.gallery-text {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.54px;
 }
 
 .gallery-title {
