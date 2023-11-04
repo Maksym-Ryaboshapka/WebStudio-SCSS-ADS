@@ -83,6 +83,10 @@ footer {
     margin-left: 93px;
 }
 
+.header-item {
+    position: relative;
+}
+
 .header-page {
     color: #212121;
     font-size: 14px;
@@ -95,6 +99,42 @@ footer {
 .active-page {
     color: #2196F3;
     position: relative;
+}
+
+.header-item:nth-child(2) .header-page::after {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+    position: absolute;
+    top: 44.5px;
+    left: 50%;
+    transform: translatex(-50%);
+    opacity: 0;
+}
+
+.header-item:nth-child(2) .header-page:hover::after  {
+    opacity: 1;
+}
+
+.header-item:nth-child(3) .header-page::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3;
+    position: absolute;
+    top: 44.5px;
+    left: 50%;
+    transform: translatex(-50%);
+    opacity: 0;
+}
+
+.header-item:nth-child(3) .header-page:hover::after {
+    opacity: 1;
 }
 
 .active-page::after {
