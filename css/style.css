@@ -119,20 +119,19 @@ footer {
 
     display: block;
     width: 0;
-    height: 0;
+    height: 4px;
     border-radius: 2px;
 
     background-color: #2196F3;
     transform: translatex(-50%);
     opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), width 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item:nth-child(2) .header-page:hover::after,
 .header-item:nth-child(2) .header-page:focus::after {
     width: 72px;
-    height: 4px;
 
     opacity: 1;
 }
@@ -145,23 +144,20 @@ footer {
     left: 50%;
 
     display: block;
-    /* width: 64px;
-    height: 4px; */
     width: 0;
-    height: 0;
+    height: 4px;
     border-radius: 2px;
 
     background-color: #2196F3;
     transform: translatex(-50%);
     opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), width 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item:nth-child(3) .header-page:hover::after,
 .header-item:nth-child(3) .header-page:focus::after {
     width: 64px;
-    height: 4px;
 
     opacity: 1;
 }
@@ -443,7 +439,7 @@ footer {
 
     background-color: #FFF;
 
-    transition: background-color 250ms ease-in-out;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-box:hover,
@@ -453,7 +449,7 @@ footer {
 }
 
 .team-icon {
-    transition: fill 250ms ease-in-out;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-box:hover .team-icon,
@@ -506,7 +502,7 @@ footer {
 
     cursor: pointer;
 
-    transition: border 250ms ease-out;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-focus:hover,
@@ -623,7 +619,7 @@ footer {
 
     background-color: rgba(255, 255, 255, 0.10);
 
-    transition: background-color 250ms ease-in-out;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-focus:hover,
@@ -674,7 +670,7 @@ footer {
     line-height: 1.25;
     letter-spacing: 0.48px;
 
-    transition: border 250ms linear;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input:focus {
