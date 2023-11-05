@@ -94,11 +94,21 @@ footer {
     line-height: 1.14;
     font-weight: 500;
     outline: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-page:hover {
+    color: #2196F3;
+}
+
+.header-page:focus {
+    color: #2196F3;
+    outline: none;
 }
 
 .active-page {
     color: #2196F3;
-    position: relative;
 }
 
 .header-item:nth-child(2) .header-page::after {
@@ -113,9 +123,11 @@ footer {
     left: 50%;
     transform: translatex(-50%);
     opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-item:nth-child(2) .header-page:hover::after  {
+.header-item:nth-child(2) .header-page:hover::after {
     opacity: 1;
 }
 
@@ -131,6 +143,8 @@ footer {
     left: 50%;
     transform: translatex(-50%);
     opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item:nth-child(3) .header-page:hover::after {
@@ -150,15 +164,6 @@ footer {
     transform: translatex(-50%);
 }
 
-.header-page:hover {
-    color: #2196F3;
-}
-
-.header-page:focus {
-    color: #2196F3;
-    outline: none;
-}
-
 .header-contacts {
     display: flex;
     gap: 50px;
@@ -168,6 +173,8 @@ footer {
 
 .header-icon {
     fill: #757575;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link {
@@ -176,6 +183,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover {
@@ -233,9 +242,15 @@ footer {
     line-height: 1.87;
     font-weight: 700;
     background-color: #2196F3;
-    border: none;
     padding: 10px 32px;
     border-radius: 4px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    transform: scale(1.075);
 }
 
 /* adventage */
@@ -409,6 +424,8 @@ footer {
     background-color: #FFF;
     padding: 12px;
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-box:hover {
@@ -418,6 +435,10 @@ footer {
 .team-box:focus {
     background-color: #2196F3;
     outline: none;
+}
+
+.team-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-box:hover .team-icon {
@@ -469,6 +490,8 @@ footer {
     border: 1px solid #AFB1B8;
     padding: 16px 32px;
     cursor: pointer;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-focus:hover {
@@ -478,6 +501,10 @@ footer {
 .clients-focus:focus {
     border: 1px solid #2196F3;
     outline: none;
+}
+
+.clients-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-focus:hover .clients-icon {
@@ -586,6 +613,8 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-focus:hover {
@@ -658,6 +687,13 @@ footer {
     width: 200px;
     height: 50px;
     margin-left: 12px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    transform: scale(1.075);
 }
 
 .footer-span3 {
