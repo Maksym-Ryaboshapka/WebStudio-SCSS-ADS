@@ -9,14 +9,16 @@ p {
 }
 
 a {
-    text-decoration: none;
     display: block;
+
+    text-decoration: none;
     cursor: pointer;
 }
 
 ul {
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
@@ -29,6 +31,8 @@ img {
 button {
     padding: 0;
     border: none;
+    display: block;
+
     cursor: pointer;
     display: block;
 }
