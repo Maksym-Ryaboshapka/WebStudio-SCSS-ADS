@@ -35,6 +35,7 @@ button {
 
     cursor: pointer;
     display: block;
+    outline: none;
 }
 
 fieldset {
