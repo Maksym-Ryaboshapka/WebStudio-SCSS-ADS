@@ -280,15 +280,15 @@ body {
     padding: 20px 20px 20px 24px;
 }
 
-.gallery-img {
-    width: 368px;
-    height: 294px;
-}
-
 .gallary-overflow {
     position: relative;
 
     overflow: hidden;
+}
+
+.gallery-img {
+    width: 368px;
+    height: 294px;
 }
 
 .gallery-overlay {
