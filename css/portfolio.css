@@ -318,6 +318,8 @@ body {
     top: 294px;
     left: 24px;
 
+    max-width: 322px;
+
     color: #FFF;
     font-size: 18px;
     line-height: 1.55;
