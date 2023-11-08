@@ -286,40 +286,49 @@ body {
     overflow: hidden;
 }
 
+.gallary-overflow::before {
+    content: '';
+
+    position: absolute;
+    top: 294px;
+    left: 0;
+
+    display: block;
+    width: 370px;
+    height: 294px;
+
+    background: rgba(33, 150, 243, 0.90);
+
+    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-focus:hover>.gallary-overflow::before,
+.gallery-focus:focus>.gallary-overflow::before {
+    top: 0;
+}
+
+
 .gallery-img {
     width: 368px;
     height: 294px;
 }
 
-.gallery-overlay {
+.gallery-text {
     position: absolute;
     top: 294px;
-    left: 0;
-    z-index: -1;
+    left: 24px;
 
-    width: 370px;
-    height: 294px;
-    padding: 63px 24px;
-
-    background: rgba(33, 150, 243, 0.90);
-    opacity: 0;
-
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1), z-index 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-focus:hover .gallary-overflow .gallery-overlay,
-.gallery-focus:focus .gallary-overflow .gallery-overlay {
-    top: 0;
-    z-index: 0;
-
-    opacity: 1;
-}
-
-.gallery-text {
     color: #FFF;
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.54px;
+
+    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-focus:hover .gallery-text,
+.gallery-focus:focus .gallery-text {
+    top: 63px;
 }
 
 .gallery-title {
