@@ -10,15 +10,13 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
   <!-- normalize, reset -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="./css/reset.css" rel="stylesheet">
   <!-- css -->
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/general.css" rel="stylesheet">
   <link href="./css/modal.css" rel="stylesheet">
 </head>
 
@@ -69,7 +67,7 @@
       <div class="container">
         <div class="hero-flex">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" data-modal-open type="button">Замовити послугу</button>
         </div>
       </div>
     </section>
@@ -379,10 +377,10 @@
       </div>
       <form class="footer-form">
         <div class="footer-box">
-          <label for="email" class="footer-label">Підпишіться на розсилку</label>
-          <input placeholder="E-mail" type="email" required class="footer-input" name="email" id="email">
+          <label class="footer-label" for="email">Підпишіться на розсилку</label>
+          <input class="footer-input" id="email" name="email" type="email" placeholder="E-mail" required>
         </div>
-        <button type="submit" class="footer-btn">
+        <button class="footer-btn" type="submit">
           <span class="footer-span3">Підписатися</span>
           <svg class="footer-subscribe">
             <use href="./images/icons/icons.svg#icon-telegram"></use>
@@ -391,11 +389,11 @@
       </form>
     </div>
   </footer>
-  <div data-modal class="backdrop is-hidden">
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
       <div class="modal-container">
         <form class="modal-form">
-          <button data-modal-close class="modal-close" type="button">
+          <button class="modal-close" data-modal-close type="button">
             <svg class="modal-cross">
               <use href="./images/icons/icons.svg#icon-cross"></use>
             </svg>
@@ -432,12 +430,12 @@
               </div>
               <div>
                 <label class="modal-label1" for="textarea">Коментар</label>
-                <textarea placeholder="Введіть текст" class="modal-textarea" id="textarea" name="textarea"></textarea>
+                <textarea class="modal-textarea" id="textarea" name="textarea" placeholder="Введіть текст"></textarea>
               </div>
             </div>
           </fieldset>
           <div class="modal-flex">
-            <input required class="modal-checkbox" id="checkbox" name="checkbox" type="checkbox">
+            <input class="modal-checkbox" id="checkbox" name="checkbox" type="checkbox" required>
             <span class="modal-check">
               <svg class="check-svg">
                 <use href="./images/icons/icons.svg#icon-check"></use>
