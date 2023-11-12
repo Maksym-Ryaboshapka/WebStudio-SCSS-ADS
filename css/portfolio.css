@@ -45,7 +45,7 @@
 }
 
 .header-pages {
-    margin-left: 93px;
+    margin: 0 0 0 93px;
 
     display: flex;
     gap: 50px;
@@ -146,7 +146,7 @@
 }
 
 .header-contacts {
-    margin-left: auto;
+    margin: 0 0 0 auto;
 
     display: flex;
     gap: 50px;
@@ -221,7 +221,7 @@
 /* gallery */
 
 .gallery {
-    padding-bottom: 94px;
+    padding: 0 0 94px;
 }
 
 .gallery-list {
@@ -304,7 +304,7 @@
 }
 
 .gallery-title {
-    margin-bottom: 4px;
+    margin: 0 0 4px;
 
     color: #212121;
     font-size: 18px;
@@ -345,7 +345,7 @@
 }
 
 .footer-span {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 
     font-family: 'Raleway';
     font-weight: 700;
@@ -363,7 +363,7 @@
 }
 
 .footer-adress {
-    margin-bottom: 9px;
+    margin: 0 0 9px;
 
     color: #FFFFFF;
     font-size: 14px;
@@ -391,7 +391,7 @@
 }
 
 .footer-title {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 
     color: #FFF;
     font-size: 14px;
@@ -437,7 +437,7 @@
 }
 
 .footer-label {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 
     color: #FFF;
     font-size: 14px;
@@ -478,7 +478,7 @@
 .footer-btn {
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    margin: 0 0 0 12px;
     border-radius: 4px;
     padding: 10px 28px;
 

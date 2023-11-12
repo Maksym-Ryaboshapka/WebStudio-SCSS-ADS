@@ -44,7 +44,7 @@
 }
 
 .header-pages {
-    margin-left: 93px;
+    margin: 0 0 0 93px;
 
     display: flex;
     gap: 50px;
@@ -143,7 +143,7 @@
 }
 
 .header-contacts {
-    margin-left: auto;
+    margin: 0 0 0 auto;
 
     display: flex;
     gap: 50px;
@@ -194,7 +194,7 @@
 }
 
 .hero-title {
-    margin-bottom: 30px;
+    margin: 0 0 30px;
     max-width: 696px;
 
     color: #FFFFFF;
@@ -241,7 +241,7 @@
     display: block;
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 
     background: #F5F4FA center no-repeat;
 }
@@ -263,7 +263,7 @@
 }
 
 .adventage-title {
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 
     color: #212121;
     font-size: 14px;
@@ -284,11 +284,11 @@
 /* classes */
 
 .classes {
-    padding-bottom: 94px;
+    padding: 0 0 94px;
 }
 
 .classes-title {
-    margin-bottom: 50px;
+    margin: 0 0 50px;
 
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -341,7 +341,7 @@
 }
 
 .team-title {
-    margin-bottom: 50px;
+    margin: 0 0 50px;
 
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -358,9 +358,8 @@
 }
 
 .team-item {
-    padding-bottom: 30px;
+    padding: 0 0 30px;
     border-radius: 0px 0px 4px 4px;
-
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -390,7 +389,7 @@
 }
 
 .team-socials {
-    margin-top: 16px;
+    margin: 16px 0 0;
 
     display: flex;
     gap: 10px;
@@ -440,7 +439,7 @@
 }
 
 .clients-title {
-    margin-bottom: 50px;
+    margin: 0 0 50px;
 
     color: #212121;
     text-align: center;
@@ -517,7 +516,7 @@
 }
 
 .footer-span {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 
     font-family: 'Raleway';
     font-weight: 700;
@@ -535,7 +534,7 @@
 }
 
 .footer-adress {
-    margin-bottom: 9px;
+    margin: 0 0 9px;
 
     color: #FFFFFF;
     font-size: 14px;
@@ -563,7 +562,7 @@
 }
 
 .footer-title {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 
     color: #FFF;
     font-size: 14px;
@@ -609,7 +608,7 @@
 }
 
 .footer-label {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 
     color: #FFF;
     font-size: 14px;
@@ -650,7 +649,7 @@
 .footer-btn {
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    margin: 0 0 0 12px;
     border-radius: 4px;
     padding: 10px 28px;
 
