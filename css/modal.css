@@ -7,7 +7,6 @@
     z-index: 1000;
 
     background-color: rgba(0, 0, 0, 0.20);
-    opacity: 1;
 
     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -33,13 +32,15 @@
     padding: 40px 0;
 
     background-color: #fff;
-    transform: translate(-50%, -50%) scale(1);
-    
+    transform: translate(-50%, -50%);
+
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal-window {
     transform: translate(-50%, -50%) scale(0);
+
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-container {
@@ -70,17 +71,18 @@
     width: 18px;
     height: 18px;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition);
 }
 
 .modal-close:hover .modal-cross,
 .modal-close:focus .modal-cross {
-    fill: #2196F3;
+    fill: var(--blue);
 }
 
 .modal-legend {
     margin: 0 0 12px;
-    color: #212121;
+
+    color: var(--text-color);
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -114,13 +116,13 @@
     padding: 11px 12px 11px 42px;
 
     font-size: 12px;
-    color: #212121;
+    color: var(--text-color);
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border var(--transition);
 }
 
 .modal-input:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--blue);
 }
 
 .modal-svg {
@@ -133,11 +135,11 @@
 
     transform: translate(0, -50%);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition);
 }
 
 .modal-input:focus+.modal-svg {
-    fill: #2196F3;
+    fill: var(--blue);
 }
 
 .modal-textarea {
@@ -149,15 +151,15 @@
 
     resize: none;
 
-    color: #212121;
+    color: var(--text-color);
     font-size: 12px;
     letter-spacing: 0.12px;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border var(--transition);
 }
 
 .modal-textarea:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--blue);
 }
 
 .modal-textarea::placeholder {
@@ -235,11 +237,11 @@
 }
 
 .modal-conditions {
-    color: #2196F3;
+    color: var(--blue);
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.42px;
-    text-decoration-line: underline;
+    text-decoration: underline;
 }
 
 .modal-btn {
@@ -254,10 +256,10 @@
     line-height: 1.87;
     letter-spacing: 0.96px;
 
-    background: #2196F3;
+    background-color: var(--blue);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition);
 }
 
 .modal-btn:hover,

@@ -13,7 +13,6 @@
 
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    /* box-shadow: 5px 0 10px 7px rgba(51, 51, 51, 0.466); */
 }
 
 .header-container {
@@ -27,7 +26,7 @@
 }
 
 .header-span1 {
-    color: #2196F3;
+    color: var(--blue);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -57,23 +56,23 @@
 }
 
 .header-page {
-    color: #212121;
+    color: var(--text-color);
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
     font-weight: 500;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
 }
 
 .header-page:hover,
 .header-page:focus {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 
 .active-page {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .header-item:nth-child(1) .header-page::after {
@@ -88,11 +87,11 @@
     height: 4px;
     border-radius: 2px;
 
-    background-color: #2196F3;
-    transform: translatex(-50%);
+    background-color: var(--blue);
+    transform: translateX(-50%);
     opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--transition), width var(--transition);
 }
 
 .header-item:nth-child(1) .header-page:hover::after,
@@ -114,11 +113,11 @@
     height: 4px;
     border-radius: 2px;
 
-    background-color: #2196F3;
-    transform: translatex(-50%);
+    background-color: var(--blue);
+    transform: translateX(-50%);
     opacity: 0;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), width 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--transition), width var(--transition), height var(--transition);
 }
 
 .header-item:nth-child(3) .header-page:hover::after,
@@ -140,9 +139,9 @@
     height: 4px;
     border-radius: 2px;
 
-    background-color: #2196F3;
+    background-color: var(--blue);
 
-    transform: translatex(-50%);
+    transform: translateX(-50%);
 }
 
 .header-contacts {
@@ -156,28 +155,26 @@
 .header-icon {
     fill: #757575;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--transition);
 }
 
 .header-link {
     color: #757575;
     font-weight: 500;
-
     display: flex;
     align-items: center;
     gap: 10px;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition);
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .header-link:hover .header-icon,
 .header-link:focus .header-icon {
-    fill: #2196F3;
+    fill: var(--blue);
     outline: none;
 }
 
@@ -201,19 +198,19 @@
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-color);
     font-weight: 500;
 
     background-color: #F5F4FA;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
 }
 
 .navigation-btn:hover,
 .navigation-btn:focus {
     color: #FFFFFF;
 
-    background-color: #2196F3;
+    background-color: var(--blue);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -238,7 +235,7 @@
 }
 
 .gallery-focus {
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--transition);
 }
 
 .gallery-focus:hover,
@@ -267,9 +264,9 @@
     width: 370px;
     height: 294px;
 
-    background: rgba(33, 150, 243, 0.90);
+    background-color: rgba(33, 150, 243, 0.90);
 
-    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: top var(--transition);
 }
 
 .gallery-focus:hover>.gallary-overflow::before,
@@ -295,7 +292,7 @@
     line-height: 1.55;
     letter-spacing: 0.54px;
 
-    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: top var(--transition);
 }
 
 .gallery-focus:hover .gallery-text,
@@ -306,7 +303,7 @@
 .gallery-title {
     margin: 0 0 4px;
 
-    color: #212121;
+    color: var(--text-color);
     font-size: 18px;
     letter-spacing: 0.06em;
     font-weight: 700;
@@ -355,7 +352,7 @@
 }
 
 .footer-span1 {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .footer-span2 {
@@ -411,12 +408,12 @@
 
     background-color: rgba(255, 255, 255, 0.10);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition);
 }
 
 .footer-focus:hover,
 .footer-focus:focus {
-    background-color: #2196F3;
+    background-color: var(--blue);
 }
 
 .footer-icon {
@@ -461,11 +458,11 @@
     line-height: 1.25;
     letter-spacing: 0.48px;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border var(--transition);
 }
 
 .footer-input:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--blue);
 }
 
 .footer-input::placeholder {
@@ -482,14 +479,14 @@
     border-radius: 4px;
     padding: 10px 28px;
 
-    background-color: #2196F3;
+    background-color: var(--blue);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
     display: flex;
     align-items: center;
     gap: 10px;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition);
 }
 
 .footer-btn:hover,
