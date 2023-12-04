@@ -1,0 +1,48 @@
+.classes {
+    padding: 0 0 94px;
+}
+
+.classes-title {
+    margin: 0 0 50px;
+
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.16;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.classes-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.classes-item {
+    position: relative;
+}
+
+.classes-img {
+    width: 370px;
+    height: 294px;
+}
+
+.classes-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    padding: 27px 0;
+    width: 370px;
+    height: 70px;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    background-color: rgba(47, 48, 58, 0.80);
+}
