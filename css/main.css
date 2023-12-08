@@ -159,7 +159,7 @@ body {
   z-index: 1000;
   height: 80px;
   padding: 24px 0 25px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
   background-color: rgba(255, 255, 255, 0.95);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -222,59 +222,80 @@ body {
   color: var(--blue);
 }
 
-.header-item:nth-child(2) .header-page::after {
-  content: "";
-  position: absolute;
-  top: 44.5px;
-  left: 50%;
-  display: block;
-  width: 0;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--blue);
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity var(--transition), width var(--transition);
-}
-
-.header-item:nth-child(2) .header-page:hover::after,
-.header-item:nth-child(2) .header-page:focus::after {
-  width: 72px;
-  opacity: 1;
-}
-
-.header-item:nth-child(3) .header-page::after {
-  content: "";
-  position: absolute;
-  top: 44.5px;
-  left: 50%;
-  display: block;
-  width: 0;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--blue);
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity var(--transition), width var(--transition);
-}
-
-.header-item:nth-child(3) .header-page:hover::after,
-.header-item:nth-child(3) .header-page:focus::after {
-  width: 64px;
-  opacity: 1;
-}
-
 .active-page::after {
   content: "";
   position: absolute;
   top: 44.5px;
   left: 50%;
   display: block;
-  width: 48px;
+  width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: var(--blue);
   transform: translatex(-50%);
+}
+
+.studio-page::after {
+  content: "";
+  position: absolute;
+  top: 44.5px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--blue);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity var(--transition), width var(--transition);
+}
+
+.studio-page:hover::after,
+.studio-page:focus::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.portfolio-page::after {
+  content: "";
+  position: absolute;
+  top: 44.5px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--blue);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity var(--transition), width var(--transition);
+}
+
+.portfolio-page:hover::after,
+.portfolio-page:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.contacts-page::after {
+  content: "";
+  position: absolute;
+  top: 44.5px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--blue);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity var(--transition), width var(--transition);
+}
+
+.contacts-page:hover::after,
+.contacts-page:focus::after {
+  width: 100%;
+  opacity: 1;
 }
 
 .header-contacts {
