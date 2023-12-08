@@ -332,7 +332,7 @@ body {
 
 .hero {
   padding: 200px 0;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/main/hero-bg.webp) center/cover no-repeat #2f303a;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main/hero-bg.webp) center/cover no-repeat #2f303a;
 }
 
 .hero-flex {
@@ -385,19 +385,19 @@ body {
 }
 
 .adventage-item:nth-child(1)::before {
-  background-image: url(../../../images/icons/antenna.svg);
+  background-image: url(../../images/icons/antenna.svg);
 }
 
 .adventage-item:nth-child(2)::before {
-  background-image: url(../../../images/icons/clock.svg);
+  background-image: url(../../images/icons/clock.svg);
 }
 
 .adventage-item:nth-child(3)::before {
-  background-image: url(../../../images/icons/diagram.svg);
+  background-image: url(../../images/icons/diagram.svg);
 }
 
 .adventage-item:nth-child(4)::before {
-  background-image: url(../../../images/icons/astronaut.svg);
+  background-image: url(../../images/icons/astronaut.svg);
 }
 
 .adventage-title {
