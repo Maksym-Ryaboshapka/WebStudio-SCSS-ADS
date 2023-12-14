@@ -1,7 +1,10 @@
+@import "./utils/vars";
 @import "./base/reset";
 @import "./base/common";
+
 @import "./utils/keyframes";
-@import "./base/animate";
+@import "./utils/animate";
+
 @import "./components/header";
 @import "./partials/main/hero";
 @import "./partials/main/adventage";
