@@ -1,8 +1,7 @@
 .classes {
-    padding: 0 0 94px;
-}
+  padding: 0 0 94px;
 
-.classes-title {
+  &__title {
     margin: 0 0 50px;
 
     font-size: 36px;
@@ -11,24 +10,24 @@
     line-height: 1.16;
     color: var(--text-color);
     text-align: center;
-}
+  }
 
-.classes-list {
+  &__list {
     display: flex;
     gap: 30px;
     justify-content: center;
-}
+  }
 
-.classes-item {
+  &__item {
     position: relative;
-}
+  }
 
-.classes-img {
+  &__img {
     width: 370px;
     height: 294px;
-}
+  }
 
-.classes-text {
+  &__text {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -37,12 +36,13 @@
     width: 370px;
     height: 70px;
 
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 
-    background-color: rgba(47, 48, 58, 0.80);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }

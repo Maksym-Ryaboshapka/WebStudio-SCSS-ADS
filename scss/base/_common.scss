@@ -120,5 +120,15 @@ body {
     outline: none;
 
     transition: fill $transition;
+
+    &--envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    &--tel {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
