@@ -1,19 +1,19 @@
 extends ./base/layout 
 
 block css 
-	link(rel="stylesheet" href="./dist/css/main.min.css")
+	link(rel="stylesheet" href="./dist/css/portfolio.min.css")
 
 block content 
 
 	-
 		let navigationList = [
 			{
-				secondPageClass: 'header__link--active',
+				secondPageClass: 'header__link--studio',
 				pageContent: 'Студія',
 				pageHref: './index.html'
 			},
 			{
-				secondPageClass: 'header__link--portfolio',
+				secondPageClass: 'header__link--active',
 				pageContent: 'Портфолі',
 				pageHref: './portfolio.html'
 			},
@@ -29,12 +29,8 @@ block content
 
 	include ./components/header
 	main
-		include ./partials/main/hero
-		include ./partials/main/adventage
-		include ./partials/main/classes
-		include ./partials/main/team
-		include ./partials/main/clients 
+		include ./partials/portfolio/navigation
+		include ./partials/portfolio/gallery
 	include ./components/footer
-	include ./partials/main/modal
 
 	include ./base/scripts

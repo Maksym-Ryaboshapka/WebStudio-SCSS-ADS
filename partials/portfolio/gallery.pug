@@ -1,0 +1,111 @@
+section.gallery
+	.container
+		ul.gallery__list
+			each galleryList in galleryListVar
+				li.gallery__item(data-aos=galleryList.aos data-aos-duration="750" data-aos-delay=galleryList.aosDelay)
+					a.gallery__focus(href="./portfolio.html")
+						.gallary__overflow
+							img.gallery__img(src=galleryList.imgSrc, alt=galleryList.imgAlt)
+							p.gallery__text.
+								Ресурс пропонує комплексні пропозиції з різним рівнем
+								функціоналу та сервісів. Все це дозволить відвідувачу
+								отримати вичерпні відомості про компанію чи приватну особу.
+						.gallery__box
+							h2.gallery__title= galleryList.titleContent
+							p.gallery__description= galleryList.descriptionContent
+
+			//- li.gallery-item(data-aos-duration="750" data-aos="fade-up")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-2.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Постер New Orlean vs Golden Star
+			//-       p.gallery-description Дизайн
+
+			//- li.gallery-item(data-aos="fade-up-left" data-aos-duration="750" data-aos-delay="100")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-3.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Ресторан Seafood
+			//-       p.gallery-description Додаток
+
+			//- li.gallery-item(data-aos="fade-up-right" data-aos-duration="750" data-aos-delay="100")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-4.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Проєкт Prime
+			//-       p.gallery-description Маркетинг
+
+			//- li.gallery-item(data-aos-duration="750" data-aos="fade-up")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-5.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Проєкт Boxes
+			//-       p.gallery-description Додаток
+
+			//- li.gallery-item(data-aos="fade-up-left" data-aos-duration="750" data-aos-delay="100")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-6.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Inspiration has no Borders
+			//-       p.gallery-description Веб-сайт
+
+			//- li.gallery-item(data-aos="fade-up-right" data-aos-duration="750" data-aos-delay="100")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-7.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Видання Limited Edition
+			//-       p.gallery-description Дизайн
+
+			//- li.gallery-item(data-aos-duration="750" data-aos="fade-up")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-8.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Проєкт LAB
+			//-       p.gallery-description Маркетинг
+
+			//- li.gallery-item(data-aos="fade-up-left" data-aos-duration="750" data-aos-delay="100")
+			//-   a.gallery-focus(href="./portfolio.html")
+			//-     .gallary-overflow
+			//-       img.gallery-img(src="./images/portfolio/gallery-9.webp" alt="фото ноутбука")
+			//-       p.gallery-text
+			//-         | Ресурс пропонує комплексні пропозиції з різним рівнем
+			//-         | функціоналу та сервісів. Все це дозволить відвідувачу
+			//-         | отримати вичерпні відомості про компанію чи приватну особу.
+			//-     .gallery-container
+			//-       h2.gallery-title Growing Business
+			//-       p.gallery-description Додаток

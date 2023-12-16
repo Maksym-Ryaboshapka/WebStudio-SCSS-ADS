@@ -1,99 +1,99 @@
 .gallery {
-    padding: 0 0 94px;
-}
+  padding: 0 0 94px;
 
-.gallery-list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-}
+  }
 
-.gallery-item {
-    border: 1px solid #EEEEEE;
+  &__item {
+    border: 1px solid #eeeeee;
 
     flex-basis: calc((100% - 60px) / 3);
-}
+  }
 
-.gallery-focus {
-    transition: box-shadow var(--transition);
-}
+  &__focus {
+    transition: box-shadow $transition;
 
-.gallery-focus:hover,
-.gallery-focus:focus {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
+    &:hover,
+    &:focus {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
 
-.gallery-container {
+    &:hover > .gallary__overflow::before,
+    &:focus > .gallary__overflow::before {
+      top: 0;
+    }
+
+    &:hover .gallery__text,
+    &:focus .gallery__text {
+      top: 63px;
+    }
+  }
+
+  &__box {
     padding: 20px 20px 20px 24px;
-}
+  }
 
-.gallary-overflow {
+  .gallary__overflow {
     position: relative;
 
     overflow: hidden;
-}
 
-.gallary-overflow::before {
-    content: '';
+    &::before {
+      content: "";
 
-    position: absolute;
-    top: 294px;
-    left: 0;
+      position: absolute;
+      top: 294px;
+      left: 0;
 
-    display: block;
-    width: 370px;
-    height: 294px;
+      display: block;
+      width: 370px;
+      height: 294px;
 
-    background-color: rgba(33, 150, 243, 0.90);
+      background-color: rgba(33, 150, 243, 0.9);
 
-    transition: top var(--transition);
-}
+      transition: top $transition;
+    }
+  }
 
-.gallery-focus:hover>.gallary-overflow::before,
-.gallery-focus:focus>.gallary-overflow::before {
-    top: 0;
-}
-
-
-.gallery-img {
+  &__img {
     width: 368px;
     height: 294px;
-}
+  }
 
-.gallery-text {
+  &__text {
     position: absolute;
     top: 294px;
     left: 24px;
 
     max-width: 322px;
 
-    color: #FFF;
+    color: #fff;
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.54px;
 
-    transition: top var(--transition);
-}
+    transition: top $transition;
+  }
 
-.gallery-focus:hover .gallery-text,
-.gallery-focus:focus .gallery-text {
-    top: 63px;
-}
-
-.gallery-title {
+  &__title {
     margin: 0 0 4px;
 
-    color: var(--text-color);
+    color: $text-color;
     font-size: 18px;
     letter-spacing: 0.06em;
     font-weight: 700;
     line-height: 2;
-}
+  }
 
-.gallery-description {
+  &__description {
     color: #757575;
     font-size: 16px;
     letter-spacing: 3%;
     line-height: 1.87;
+  }
 }
