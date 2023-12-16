@@ -7,44 +7,44 @@
 						use(href="./images/icons/sprite.svg#icon-cross")
 				fieldset.modal__fieldset
 					legend.modal__legend Залиште свої дані, ми вам передзвонимо
-					.modal__box
-						ul.modal__list 	
-							each modalInputs in modalInputsVar
-								li.modal__item
-									label.modal__label(for=modalInputs.labelFor)= modalInputs.labelContent
-									.modal__position
-										input.modal__input(id=modalInputs.inputId type=modalInputs.inputType)
-						div
-							label.modal-label1(for="textarea") Коментар
-							textarea.modal-textarea(id="textarea" placeholder="Введіть текст")
+					ul.modal__list 	
+						each modalInputs in modalInputsVar
+							li.modal__item
+								label.modal__label(for=modalInputs.labelFor)= modalInputs.labelContent
+								.modal__position
+									input.modal__input(id=modalInputs.inputId type=modalInputs.inputType required autocomplete="off")
+									svg.modal__svg
+										use(href=modalInputs.useHref)
+					label.modal__label(for="textarea") Коментар
+					textarea.modal__textarea(id="textarea" placeholder="Введіть текст")
 
-				.modal-flex
-					input.modal-checkbox(id="checkbox" name="checkbox" type="checkbox" required)
-					span.modal-check
-						svg.check-svg
+				.modal__flex
+					input.modal__checkbox(id="checkbox" name="checkbox" type="checkbox" required)
+					span.modal__check
+						svg.modal__svg--check
 							use(href="./images/icons/sprite.svg#icon-check")
-					span.modal-fake
-						svg.fake-svg
+					span.modal__fake
+						svg.modal__svg--fake
 							use(href="./images/icons/sprite.svg#icon-border")
-					label.modal-lebel2(for="checkbox")
-						span.modal-span Погоджуюся з розсилкою та приймаю
-						a.modal-conditions(href="./index.html") Умови договору
-				button.modal-btn(type="submit") Відправити
+					label.modal__label--checkbox(for="checkbox")
+						span.modal__span Погоджуюся з розсилкою та приймаю
+						a.modal__conditions(href="./index.html") Умови договору
+				button.modal__btn(type="submit") Відправити
 				//- div
-					//- 		label.modal-label1(for="name") Ім'я
-					//- 		.modal-position
-					//- 			input.modal-input(id="name" required autocomplete="off")
-					//- 			svg.modal-svg
-					//- 				use(href="./images/icons/sprite.svg#icon-person")
-					//- 	div
-					//- 		label.modal-label1(for="tel") Телефон
-					//- 		.modal-position
-					//- 			input.modal-input(id="tel" type="tel" required autocomplete="off")
-					//- 			svg.modal-svg
-					//- 				use(href="./images/icons/sprite.svg#icon-phone")
-					//- 	div
-					//- 		label.modal-label1(for="mail") Пошта
-					//- 		.modal-position
-					//- 			input.modal-input(id="mail" type="email" required autocomplete="off")
-					//- 			svg.modal-svg
-					//- 				use(href="./images/icons/sprite.svg#icon-email")
+				//- 		label.modal-label1(for="name") Ім'я
+				//- 		.modal-position
+				//- 			input.modal-input(id="name" required autocomplete="off")
+				//- 			svg.modal-svg
+				//- 				use(href="./images/icons/sprite.svg#icon-person")
+				//- 	div
+				//- 		label.modal-label1(for="tel") Телефон
+				//- 		.modal-position
+				//- 			input.modal-input(id="tel" type="tel" required autocomplete="off")
+				//- 			svg.modal-svg
+				//- 				use(href="./images/icons/sprite.svg#icon-phone")
+				//- 	div
+				//- 		label.modal-label1(for="mail") Пошта
+				//- 		.modal-position
+				//- 			input.modal-input(id="mail" type="email" required autocomplete="off")
+				//- 			svg.modal-svg
+				//- 				use(href="./images/icons/sprite.svg#icon-email")

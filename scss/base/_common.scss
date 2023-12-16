@@ -141,50 +141,50 @@ body {
   &--team {
     margin: 16px 0 0;
   }
-}
 
-&__focus {
-  padding: 12px;
-  border-radius: 50%;
+  &__focus {
+    padding: 12px;
+    border-radius: 50%;
 
-  background-color: #fff;
+    background-color: #fff;
 
-  animation: borderRadius 2000ms cubic-bezier(0.4, 0, 0.2, 1) infinite paused;
+    animation: borderRadius 2000ms cubic-bezier(0.4, 0, 0.2, 1) infinite paused;
 
-  transition: background-color $transition;
+    transition: background-color $transition;
 
-  &:hover,
-  &:focus {
-    background-color: $blue;
+    &:hover,
+    &:focus {
+      background-color: $blue;
 
-    animation-play-state: running;
+      animation-play-state: running;
+    }
+
+    &:hover .social__icon,
+    &:focus .social__icon {
+      fill: #fff;
+    }
+
+    &--footer {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 
-  &:hover .social__icon,
-  &:focus .social__icon {
-    fill: #fff;
-  }
+  &__icon {
+    width: 20px;
+    height: 20px;
 
-  &--footer {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-&__icon {
-  width: 20px;
-  height: 20px;
+    fill: #afb1b8;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    outline: none;
 
-  fill: #afb1b8;
+    transition: fill $transition;
 
-  outline: none;
-
-  transition: fill $transition;
-
-  &--footer {
-    fill: #fff;
+    &--footer {
+      fill: #fff;
+    }
   }
 }

@@ -165,7 +165,6 @@ body {
 .social--team {
   margin: 16px 0 0;
 }
-
 .social__focus {
   padding: 12px;
   border-radius: 50%;
@@ -173,16 +172,16 @@ body {
   animation: borderRadius 2000ms cubic-bezier(0.4, 0, 0.2, 1) infinite paused;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social__focus--footer {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social__focus:hover,
-.social__focus:focus {
+.social__focus:hover, .social__focus:focus {
   background-color: #2196f3;
   animation-play-state: running;
 }
-
+.social__focus:hover .social__icon, .social__focus:focus .social__icon {
+  fill: #fff;
+}
+.social__focus--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .social__icon {
   width: 20px;
   height: 20px;
@@ -194,11 +193,6 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__icon--footer {
-  fill: #fff;
-}
-
-.social__focus:hover .social__icon,
-.social__focus:focus .social__icon {
   fill: #fff;
 }
 
@@ -602,37 +596,10 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-
-.socials-list {
-  display: flex;
-  gap: 10px;
-}
-.socials-list__focus {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  animation: borderRadius 2000ms cubic-bezier(0.4, 0, 0.2, 1) infinite paused;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.socials-list__focus:hover, .socials-list__focus:focus {
-  background-color: #2196f3;
-  animation-play-state: running;
-}
-.socials-list__icon {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
-}
-
 .footer__form {
   display: flex;
   align-items: flex-end;
 }
-
 .footer__label {
   margin: 0 0 20px;
   color: #fff;
@@ -641,7 +608,6 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-
 .footer__input {
   width: 358px;
   height: 50px;
@@ -656,25 +622,21 @@ body {
   letter-spacing: 0.48px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__input:focus {
   border: 1px solid #2196f3;
 }
-
 .footer__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.48px;
 }
-
 .footer__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.48px;
 }
-
 .footer__btn {
   width: 200px;
   height: 50px;
@@ -688,12 +650,9 @@ body {
   gap: 10px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer__btn:hover,
-.footer__btn:focus {
+.footer__btn:hover, .footer__btn:focus {
   transform: scale(1.075);
 }
-
 .footer__span--form {
   color: #fff;
   text-align: center;
@@ -702,7 +661,6 @@ body {
   line-height: 1.87;
   letter-spacing: 0.96px;
 }
-
 .footer__icon--form {
   width: 24px;
   height: 24px;
@@ -719,18 +677,21 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .no-scroll {
   overflow: hidden;
 }
 
-.modal-window {
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -742,19 +703,12 @@ body {
   transform: translate(-50%, -50%);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.backdrop.is-hidden .modal-window {
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-container {
+.modal__container {
   width: 528px;
   height: 100%;
   padding: 0 40px;
 }
-
-.modal-close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -768,104 +722,89 @@ body {
   align-items: center;
   background-color: #fff;
 }
-
-.modal-cross {
+.modal__close:hover .modal__cross, .modal__close:focus .modal__cross {
+  fill: #2196f3;
+}
+.modal__cross {
   width: 18px;
   height: 18px;
-  transition: fill var(--transition);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close:hover .modal-cross,
-.modal-close:focus .modal-cross {
-  fill: var(--blue);
-}
-
-.modal-legend {
+.modal__legend {
   margin: 0 0 12px;
-  color: var(--text-color);
+  color: #212121;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
 }
-
-.modal-box {
+.modal__list {
+  margin: 0 0 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-.modal-label1 {
+.modal__label {
   margin: 0 0 4px;
   color: #757575;
   font-size: 12px;
   line-height: normal;
   letter-spacing: 0.12px;
 }
-
-.modal-position {
+.modal__position {
   position: relative;
 }
-
-.modal-input {
+.modal__input {
   width: 448px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 11px 12px 11px 42px;
   font-size: 12px;
-  color: var(--text-color);
-  transition: border var(--transition);
+  color: #212121;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:focus {
-  border: 1px solid var(--blue);
+.modal__input:focus {
+  border: 1px solid #2196f3;
 }
-
-.modal-svg {
+.modal__input:focus + .modal__svg {
+  fill: #2196f3;
+}
+.modal__svg {
   position: absolute;
   left: 12px;
   top: 50%;
   width: 18px;
   height: 18px;
   transform: translate(0, -50%);
-  transition: fill var(--transition);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:focus + .modal-svg {
-  fill: var(--blue);
-}
-
-.modal-textarea {
+.modal__textarea {
   width: 448px;
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
   resize: none;
-  color: var(--text-color);
+  color: #212121;
   font-size: 12px;
   letter-spacing: 0.12px;
-  transition: border var(--transition);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-textarea:focus {
-  border: 1px solid var(--blue);
+.modal__textarea:focus {
+  border: 1px solid #2196f3;
 }
-
-.modal-textarea::-moz-placeholder {
+.modal__textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   letter-spacing: 0.12px;
 }
-
-.modal-textarea::placeholder {
+.modal__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   letter-spacing: 0.12px;
 }
-
-.modal-flex {
+.modal__flex {
   position: relative;
   margin: 20px 0 30px;
   display: flex;
@@ -873,8 +812,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.modal-checkbox {
+.modal__checkbox {
   position: absolute;
   left: 19px;
   z-index: 1;
@@ -883,74 +821,62 @@ body {
   opacity: 0;
   cursor: pointer;
 }
-
-.modal-checkbox:checked + .modal-check {
+.modal__checkbox:checked + .modal__check {
   opacity: 1;
 }
-
-.modal-checkbox:checked ~ .modal-fake {
+.modal__checkbox:checked ~ .modal__fake {
   opacity: 0;
 }
-
-.modal-fake {
+.modal__fake {
   width: 16px;
   height: 15px;
 }
-
-.fake-svg {
+.modal__svg--fake {
   width: 100%;
   height: 100%;
 }
-
-.modal-check {
+.modal__check {
   position: absolute;
   left: 19px;
   width: 16px;
   height: 15px;
   opacity: 0;
 }
-
-.check-svg {
+.modal__svg--check {
   width: 100%;
   height: 100%;
 }
-
-.modal-lebel2 {
+.modal__label--checkbox {
   display: flex;
   gap: 5.5px;
 }
-
-.modal-span {
+.modal__span {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-
-.modal-conditions {
-  color: var(--blue);
+.modal__conditions {
+  color: #2196f3;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
   text-decoration: underline;
 }
-
-.modal-btn {
+.modal__btn {
   padding: 10px 52px;
   border-radius: 4px;
   margin: 0 auto;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
-  background-color: var(--blue);
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   transform: scale(1.075);
 }/*# sourceMappingURL=main.css.map */
