@@ -21,7 +21,7 @@
     overflow: hidden;
 }
 
-.modal-window {
+.modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -37,19 +37,19 @@
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal-window {
+.backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
 
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-container {
+.modal__container {
     width: 528px;
     height: 100%;
     padding: 0 40px;
 }
 
-.modal-close {
+.modal__close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -67,48 +67,48 @@
     background-color: #fff;
 }
 
-.modal-cross {
+.modal__cross {
     width: 18px;
     height: 18px;
 
-    transition: fill var(--transition);
+    transition: fill $transition;
 }
 
-.modal-close:hover .modal-cross,
-.modal-close:focus .modal-cross {
-    fill: var(--blue);
+.modal__close:hover .modal__cross,
+.modal__close:focus .modal__cross {
+    fill: $blue;
 }
 
-.modal-legend {
+.modal__legend {
     margin: 0 0 12px;
 
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.6px;
 }
 
-.modal-box {
+.modal__box {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.modal-label1 {
-    margin: 0 0 4px;
+// .modal-label1 {
+//     margin: 0 0 4px;
 
-    color: #757575;
-    font-size: 12px;
-    line-height: normal;
-    letter-spacing: 0.12px;
-}
+//     color: #757575;
+//     font-size: 12px;
+//     line-height: normal;
+//     letter-spacing: 0.12px;
+// }
 
-.modal-position {
+.modal__position {
     position: relative;
 }
 
-.modal-input {
+.modal__input {
     width: 448px;
     height: 40px;
     border-radius: 4px;
@@ -116,13 +116,13 @@
     padding: 11px 12px 11px 42px;
 
     font-size: 12px;
-    color: var(--text-color);
+    color: $text-color;
 
-    transition: border var(--transition);
+    transition: border $transition;
 }
 
-.modal-input:focus {
-    border: 1px solid var(--blue);
+.modal__input:focus {
+    border: 1px solid $blue;
 }
 
 .modal-svg {
@@ -135,11 +135,11 @@
 
     transform: translate(0, -50%);
 
-    transition: fill var(--transition);
+    transition: fill $transition;
 }
 
 .modal-input:focus+.modal-svg {
-    fill: var(--blue);
+    fill: $blue;
 }
 
 .modal-textarea {
@@ -151,15 +151,15 @@
 
     resize: none;
 
-    color: var(--text-color);
+    color: $text-color;
     font-size: 12px;
     letter-spacing: 0.12px;
 
-    transition: border var(--transition);
+    transition: border $transition;
 }
 
 .modal-textarea:focus {
-    border: 1px solid var(--blue);
+    border: 1px solid $blue;
 }
 
 .modal-textarea::placeholder {
@@ -237,7 +237,7 @@
 }
 
 .modal-conditions {
-    color: var(--blue);
+    color: $blue;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.42px;
@@ -256,10 +256,10 @@
     line-height: 1.87;
     letter-spacing: 0.96px;
 
-    background-color: var(--blue);
+    background-color: $blue;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-    transition: transform var(--transition);
+    transition: transform $transition;
 }
 
 .modal-btn:hover,

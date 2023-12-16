@@ -132,3 +132,59 @@ body {
     }
   }
 }
+
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  &--team {
+    margin: 16px 0 0;
+  }
+}
+
+&__focus {
+  padding: 12px;
+  border-radius: 50%;
+
+  background-color: #fff;
+
+  animation: borderRadius 2000ms cubic-bezier(0.4, 0, 0.2, 1) infinite paused;
+
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+
+    animation-play-state: running;
+  }
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: #fff;
+  }
+
+  &--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+&__icon {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: #afb1b8;
+
+  outline: none;
+
+  transition: fill $transition;
+
+  &--footer {
+    fill: #fff;
+  }
+}

@@ -1,4 +1,25 @@
 -
+	//- mixins
+
+	let socialListVar = [
+		{
+			linkHref: 'https://www.instagram.com/',
+			useHref: './images/icons/sprite.svg#icon-instagram'
+		},
+		{
+			linkHref: 'https://twitter.com/',
+			useHref: './images/icons/sprite.svg#icon-twitter'
+		},
+		{
+			linkHref: 'https://www.facebook.com/',
+			useHref: './images/icons/sprite.svg#icon-facebook'
+		},
+		{
+			linkHref: 'https://www.linkedin.com/',
+			useHref: './images/icons/sprite.svg#icon-linkedin'
+		}
+	]
+
 	//- header
 
 	let navigationList = [
@@ -83,5 +104,101 @@
 			imgSrc: './images/main/classes-3.webp',
 			imgAlt: 'картинка ноутбука',
 			textContent: 'Дизайнерські рішення'
+		}
+	]
+
+	//- team
+
+	let teamListVar = [
+		{
+			aos: 'fade-up',
+			imgSrc: './images/main/team-1.webp',
+			subtitleContent: 'Ігор Дем\'яненко',
+			textContent: 'Product Designer'
+		},
+		{
+			aos: 'fade-down',
+			aosDelay: '500',
+			imgSrc: './images/main/team-2.webp',
+			subtitleContent: 'Ольга Рєпіна',
+			textContent: 'Frontend Developer'
+		},
+		{
+			aos: 'fade-up',
+			aosDelay: '1000',
+			imgSrc: './images/main/team-3.webp',
+			subtitleContent: 'Микола Тарасов',
+			textContent: 'Marketing'
+		},
+		{
+			aos: 'fade-down',
+			aosDelay: '1500',
+			imgSrc: './images/main/team-4.webp',
+			subtitleContent: 'Михайло Єрмаков',
+			textContent: 'UI Designer'
+		}
+	]
+
+	//- clients
+
+	let clientsListVar = [
+		{
+			aos: 'zoom-in',
+			useHref: './images/icons/sprite.svg#icon-company1'
+		},
+		{
+			aos: 'zoom-out',
+			useHref: './images/icons/sprite.svg#icon-company2'
+		},
+		{
+			aos: 'zoom-in',
+			useHref: './images/icons/sprite.svg#icon-company3'
+		},
+		{
+			aos: 'zoom-out',
+			useHref: './images/icons/sprite.svg#icon-company4'
+		},
+		{
+			aos: 'zoom-in',
+			useHref: './images/icons/sprite.svg#icon-company5'
+		},
+		{
+			aos: 'zoom-out',
+			useHref: './images/icons/sprite.svg#icon-company6'
+		}
+	]
+
+	//- footer
+
+	let footerListVar = [
+		{
+			linkHref: 'mailto:info@devstudio.com',
+			linkContent: 'info@devstudio.com'
+		},
+		{
+			linkHref: 'tel:+380961111111',
+			linkContent: '+38 096 111 11 11'
+		}
+	]
+
+	//- modal
+
+	let modalInputsVar = [
+		{
+			labelFor: 'name',
+			labelContent: 'Ім\'я',
+			inputId: 'name'
+		},
+		{
+			labelFor: 'tel',
+			labelContent: 'Телефон',
+			inputId: 'tel',
+			inputType: 'tel'
+		},
+		{
+			labelFor: 'mail',
+			labelContent: 'Пошта',
+			inputId: 'mail',
+			inputType: 'email'
 		}
 	]

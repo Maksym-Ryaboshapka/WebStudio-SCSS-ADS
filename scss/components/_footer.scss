@@ -33,121 +33,86 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
-}
 
-.socials-list {
-  display: flex;
-  gap: 10px;
-
-  &__focus {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
+  &__form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+  }
 
-    background-color: rgba(255, 255, 255, 0.1);
+  &__label {
+    margin: 0 0 20px;
 
-    animation: borderRadius 2000ms cubic-bezier(0.4, 0, 0.2, 1) infinite paused;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
 
-    transition: background-color $transition;
+  &__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 16px;
 
-    &:hover,
+    background-color: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+
+    transition: border $transition;
+
     &:focus {
-      background-color: $blue;
+      border: 1px solid $blue;
+    }
 
-      animation-play-state: running;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.48px;
     }
   }
 
-  &__icon {
-    width: 20px;
-    height: 20px;
+  &__btn {
+    width: 200px;
+    height: 50px;
+    margin: 0 0 0 12px;
+    border-radius: 4px;
+    padding: 10px 28px;
+
+    background-color: $blue;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: transform $transition;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.075);
+    }
+  }
+
+  &__span--form {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+  }
+
+  &__icon--form {
+    width: 24px;
+    height: 24px;
 
     fill: #fff;
   }
-}
-
-.footer__form {
-  display: flex;
-  align-items: flex-end;
-}
-
-.footer__label {
-  margin: 0 0 20px;
-
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-
-.footer__input {
-  width: 358px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0 16px;
-
-  background-color: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-  color: rgba(255, 255, 255, 1);
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-
-  transition: border $transition;
-}
-
-.footer__input:focus {
-  border: 1px solid $blue;
-}
-
-.footer__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-}
-
-.footer__btn {
-  width: 200px;
-  height: 50px;
-  margin: 0 0 0 12px;
-  border-radius: 4px;
-  padding: 10px 28px;
-
-  background-color: $blue;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  transition: transform $transition;
-}
-
-.footer__btn:hover,
-.footer__btn:focus {
-  transform: scale(1.075);
-}
-
-.footer__span--form {
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-}
-
-.footer__icon--form {
-  width: 24px;
-  height: 24px;
-
-  fill: #fff;
 }
