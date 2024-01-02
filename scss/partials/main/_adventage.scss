@@ -1,10 +1,9 @@
 .adventage {
-  padding: 94px 0;
+  @include block-model(0, 94px 0);
 
   &__list {
     display: flex;
     gap: 30px;
-    justify-content: center;
   }
 
   &__item {
@@ -12,10 +11,9 @@
     &::before {
       content: "";
 
+      @include size(270px, 120px);
+      @include block-model(0 0 30px);
       display: block;
-      width: 270px;
-      height: 120px;
-      margin: 0 0 30px;
 
       background: center no-repeat #f5f4fa;
     }
@@ -38,21 +36,17 @@
   }
 
   &__title {
-    margin: 0 0 10px;
+    @include block-model(0 0 10px);
 
+    @include text-styles(14px, 1.14);
     color: $text-color;
-    font-size: 14px;
-    letter-spacing: 0.03em;
     font-weight: 700;
-    line-height: 1.14;
   }
 
   &__description {
     max-width: 270px;
 
+    @include text-styles(14px, 1.71);
     color: #757575;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
   }
 }

@@ -1,14 +1,14 @@
 // scrollbar
 
 ::-webkit-scrollbar {
-  width: 15px;
+  @include size(15px);
 
   &-track {
     background-color: #f1f1f1;
   }
 
   &-thumb {
-    border-radius: 8px;
+    @include block-model(0, 0, none, 8px);
 
     background-image: linear-gradient($blue, #1b81d4);
 
@@ -24,7 +24,7 @@
   font-family: "Roboto";
 
   &::selection {
-    color: #fff;
+    color: $light-text-color;
 
     background-color: $blue;
   }
@@ -37,9 +37,8 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  @include size(1200px);
+  @include block-model(0 auto, 0 15px);
 }
 
 // blocks
@@ -48,11 +47,9 @@ body {
   display: flex;
 
   &__span {
+    @include text-styles(26px, 1.19);
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    line-height: 1.19;
   }
 
   &__span--blue {
@@ -64,7 +61,7 @@ body {
   }
 
   &__span--white {
-    color: #fff;
+    color: $light-text-color;
   }
 }
 
@@ -72,7 +69,7 @@ body {
   display: flex;
 
   &--header {
-    margin: 0 0 0 auto;
+    @include block-model(0 0 0 auto);
 
     gap: 50px;
     align-items: center;
@@ -85,15 +82,14 @@ body {
 
   &__contact {
     &--footer {
-      width: 136px;
+      @include size(136px);
     }
   }
 
   &__link {
     color: #757575;
 
-    display: flex;
-    align-items: center;
+    @extend %flex;
     gap: 10px;
 
     transition: color $transition;
@@ -121,31 +117,27 @@ body {
     transition: fill $transition;
 
     &--envelope {
-      width: 16px;
-      height: 12px;
+      @include size(16px, 12px);
     }
 
     &--tel {
-      width: 10px;
-      height: 16px;
+      @include size(10px, 16px);
     }
   }
 }
 
 .social {
-  display: flex;
+  @extend %flex;
   gap: 10px;
-  justify-content: center;
 
   &--team {
-    margin: 16px 0 0;
+    @include block-model(16px 0 0);
   }
 
   &__focus {
-    padding: 12px;
-    border-radius: 50%;
+    @include block-model(0, 12px, none, 50%);
 
-    background-color: #fff;
+    background-color: $light-text-color;
 
     animation: borderRadius 2000ms cubic-bezier(0.4, 0, 0.2, 1) infinite paused;
 
@@ -160,7 +152,7 @@ body {
 
     &:hover .social__icon,
     &:focus .social__icon {
-      fill: #fff;
+      fill: $light-text-color;
     }
 
     &--footer {
@@ -169,21 +161,17 @@ body {
   }
 
   &__icon {
-    width: 20px;
-    height: 20px;
+    @include size(20px, 20px);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 
-    fill: #afb1b8;
-
+    fill: $grey;
     outline: none;
 
     transition: fill $transition;
 
     &--footer {
-      fill: #fff;
+      fill: $light-text-color;
     }
   }
 }

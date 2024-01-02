@@ -1,15 +1,14 @@
 .gallery {
-  padding: 0 0 94px;
+  @include block-model(0, 0 0 94px);
 
   &__list {
-    display: flex;
+    @extend %flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
   }
 
   &__item {
-    border: 1px solid #eeeeee;
+    @include block-model(0, 0, 1px solid #eeeeee);
 
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -35,7 +34,7 @@
   }
 
   &__box {
-    padding: 20px 20px 20px 24px;
+    @include block-model(0, 20px 20px 20px 24px);
   }
 
   .gallary__overflow {
@@ -50,9 +49,8 @@
       top: 294px;
       left: 0;
 
+      @include size(370px, 294px);
       display: block;
-      width: 370px;
-      height: 294px;
 
       background-color: rgba(33, 150, 243, 0.9);
 
@@ -61,8 +59,7 @@
   }
 
   &__img {
-    width: 368px;
-    height: 294px;
+    @include size(368px, 294px);
   }
 
   &__text {
@@ -72,28 +69,22 @@
 
     max-width: 322px;
 
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.54px;
+    @include text-styles(18px, 1.55, 0.54px);
+    color: $light-text-color;
 
     transition: top $transition;
   }
 
   &__title {
-    margin: 0 0 4px;
+    @include block-model(0 0 4px);
 
+    @include text-styles(18px, 2, 0.06em);
     color: $text-color;
-    font-size: 18px;
-    letter-spacing: 0.06em;
     font-weight: 700;
-    line-height: 2;
   }
 
   &__description {
+    @include text-styles(16px, 1.87, 3%);
     color: #757575;
-    font-size: 16px;
-    letter-spacing: 3%;
-    line-height: 1.87;
   }
 }

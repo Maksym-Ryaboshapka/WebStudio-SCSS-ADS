@@ -1,0 +1,17 @@
+@mixin text-styles($fontSize: 14px, $lineHeight: normal, $letterSpacing: 0.03em) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	letter-spacing: $letterSpacing;
+}
+
+@mixin size($width: auto, $height: auto) {
+	width: $width;
+	height: $height;
+}
+
+@mixin block-model($margin: 0, $padding: 0, $border: none, $borderRadius: 0) {
+	margin: $margin;
+	padding: $padding;
+	border: $border;
+	border-radius: $borderRadius;
+}

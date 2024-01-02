@@ -1,21 +1,18 @@
 .classes {
-  padding: 0 0 94px;
+  @include block-model(0, 0 0 94px);
 
   &__title {
-    margin: 0 0 50px;
+    @include block-model(0 0 50px);
 
-    font-size: 36px;
-    letter-spacing: 0.03em;
+    @include text-styles(36px, 1.16);
     font-weight: 700;
-    line-height: 1.16;
     color: $text-color;
     text-align: center;
   }
 
   &__list {
-    display: flex;
+    @extend %flex;
     gap: 30px;
-    justify-content: center;
   }
 
   &__item {
@@ -23,8 +20,7 @@
   }
 
   &__img {
-    width: 370px;
-    height: 294px;
+    @include size(370px, 294px);
   }
 
   &__text {
@@ -32,15 +28,13 @@
     left: 0;
     bottom: 0;
 
-    padding: 27px 0;
-    width: 370px;
-    height: 70px;
+    @include size(370px, 70px);
+    @include block-model(0, 27px 0);
 
-    color: #fff;
+    @include text-styles(14px, normal, 0.42px);
+    color: $light-text-color;
     text-align: center;
-    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.42px;
     text-transform: uppercase;
 
     background-color: rgba(47, 48, 58, 0.8);

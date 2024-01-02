@@ -1,35 +1,30 @@
 .hero {
-  padding: 200px 0;
+  @include block-model(0, 200px 0);
 
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../images/main/hero-bg.webp) center / cover no-repeat #2f303a;
 
   &__flex {
-    display: flex;
+    @extend %flex;
     flex-direction: column;
-    align-items: center;
   }
 
   &__title {
-    margin: 0 0 30px;
+    @include block-model(0 0 30px);
     max-width: 696px;
 
-    color: #ffffff;
+    @include text-styles(44px, 1.36, 0.06em);
+    color: $light-text-color;
     text-align: center;
-    font-size: 44px;
-    letter-spacing: 0.06em;
-    line-height: 1.36;
     text-transform: uppercase;
     font-weight: 900;
   }
 
   &__btn {
-    padding: 10px 32px;
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 16px;
-    letter-spacing: 0.06em;
-    line-height: 1.87;
+    @include block-model(0, 10px 32px, none, 4px);
+
+    @include text-styles(16px, 1.87, 0.06em);
+    color: $light-text-color;
     font-weight: 700;
     background-color: $blue;
 
