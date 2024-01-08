@@ -31,14 +31,20 @@
 }
 
 body {
-  padding-top: 80px;
-
   overflow-x: hidden;
+
+  @media screen and (min-width: 1200px) {
+    @include block-model(0, 80px 0 0)
+  }
 }
 
 .container {
-  @include size(1200px);
+  @include size(100%);
   @include block-model(0 auto, 0 15px);
+
+  @media screen and (min-width: 1200px) {
+    @include size(1200px);
+  }
 }
 
 // blocks
@@ -70,9 +76,20 @@ body {
 
   &--header {
     @include block-model(0 0 0 auto);
+    display: none;
 
-    gap: 50px;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+      flex-direction: row;
+    }
   }
 
   &--footer {

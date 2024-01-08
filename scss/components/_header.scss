@@ -1,30 +1,83 @@
 .header {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
 
-  @include size(auto, 80px);
-  @include block-model(0, 24px 0 25px);
+  @include size(auto, 60px);
+  @include block-model(0, 16px 0);
   border-bottom: 1px solid #ececec;
 
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
 
+  @media screen and (min-width: 768px) {
+    @include size(auto, 80px);
+    @include block-model(0, 21px 0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+
+    @include block-model(0, 25px 0 24px);
+  }
+
   &__container {
     @extend %flex;
   }
 
+  &__box {
+    @include size(100%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      @include size();
+    }
+  }
+
+  &__btn {
+    &:hover .header__line,
+    &:focus .header__line {
+      background-color: $blue;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__line {
+    @include size(24px, 3px);
+
+    background-color: #000;
+
+    transition: background-color $transition;
+  }
+
   &__navigation {
     @extend %flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
   &__pages {
     @include block-model(0 0 0 93px);
 
     @extend %flex;
-    gap: 50px;;
+    gap: 50px;
   }
 
   &__page {
@@ -53,7 +106,7 @@
       content: "";
 
       position: absolute;
-      top: 44.5px;
+      top: 40px;
       left: 50%;
 
       @include size(100%, 4px);
@@ -62,67 +115,15 @@
 
       background-color: $blue;
       transform: translatex(-50%);
+
+      @media screen and (min-width: 1200px) {
+        top: 44.5px;
+      }
     }
   }
 
-  &__link--studio {
-    position: relative;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 44.5px;
-      left: 50%;
-
-      @include size(0, 4px);
-      @include block-model(0, 0, none, 2px);
-      display: block;
-
-      background-color: $blue;
-      transform: translateX(-50%);
-      opacity: 0;
-
-      transition: opacity $transition, width $transition;
-    }
-
-    &:hover::after,
-    &:focus::after {
-      @include size(100%, 4px);
-
-      opacity: 1;
-    }
-  }
-
-  &__link--portfolio {
-    position: relative;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 44.5px;
-      left: 50%;
-
-      @include size(0, 4px);
-      @include block-model(0, 0, none, 2px);
-      display: block;
-
-      background-color: $blue;
-      transform: translateX(-50%);
-      opacity: 0;
-
-      transition: opacity $transition, width $transition;
-    }
-
-    &:hover::after,
-    &:focus::after {
-      @include size(100%, 4px);
-
-      opacity: 1;
-    }
-  }
-
+  &__link--studio,
+  &__link--portfolio,
   &__link--contacts {
     position: relative;
 
@@ -130,7 +131,7 @@
       content: "";
 
       position: absolute;
-      top: 44.5px;
+      top: 40px;
       left: 50%;
 
       @include size(0, 4px);
@@ -142,6 +143,10 @@
       opacity: 0;
 
       transition: opacity $transition, width $transition;
+
+      @media screen and (min-width: 1200px) {
+        top: 44.5px;
+      }
     }
 
     &:hover::after,
