@@ -1,4 +1,4 @@
-.modal__flex, .modal__close, .footer__btn, .footer__container, .clients__list, .team__list, .classes__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social, .contacts-list__link {
+.modal__flex, .modal__close, .footer__btn, .footer__container, .clients__list, .team__list, .classes__list, .adventage__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social, .contacts-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,12 +507,12 @@ body {
   border-radius: 0;
 }
 .adventage__list {
-  display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .adventage__item::before {
   content: "";
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin: 0 0 30px;
   padding: 0;
@@ -520,6 +520,12 @@ body {
   border-radius: 0;
   display: block;
   background: center no-repeat #f5f4fa;
+}
+@media screen and (min-width: 480px) {
+  .adventage__item::before {
+    width: 450px;
+    height: 120px;
+  }
 }
 .adventage__item:nth-child(1)::before {
   background-image: url(../../images/icons/antenna.svg);
