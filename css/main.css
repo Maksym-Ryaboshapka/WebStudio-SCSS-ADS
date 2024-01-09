@@ -663,23 +663,57 @@ body {
   padding: 0;
   border: none;
   border-radius: 0;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   font-weight: 700;
   color: #212121;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
 .team__list {
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .team__list {
+    display: grid;
+    grid-template: repeat(4, 622px)/repeat(1, 450px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: grid;
+    grid-template: repeat(2, 536px)/repeat(2, 354px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: grid;
+    grid-template: repeat(1, 428px)/repeat(4, 270px);
+  }
 }
 .team__item {
   margin: 0;
-  padding: 0 0 30px;
+  padding: 0 0 24px;
   border: none;
   border-radius: 0 0 4px 4px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    margin: 0;
+    padding: 0 0 30px;
+    border: none;
+    border-radius: 0 0 4px 4px;
+  }
 }
 .team__img {
   width: 270px;
