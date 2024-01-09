@@ -511,10 +511,18 @@ body {
   display: none;
 }
 .adventage__list {
-  display: grid;
-  grid-template: repeat(4, 224px)/repeat(1, 450px);
-  gap: 30px;
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .adventage__list {
+    display: grid;
+    grid-template: repeat(4, 224px)/repeat(1, 450px);
+    gap: 30px;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .adventage__list {
@@ -572,6 +580,21 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .adventage__description {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .adventage__description {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adventage__description {
+    max-width: 270px;
+  }
 }
 
 .classes {

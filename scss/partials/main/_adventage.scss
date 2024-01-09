@@ -7,10 +7,18 @@
   }
 
   &__list {
-    display: grid;
-    grid-template: repeat(4, 224px) / repeat(1, 450px);
-    gap: 30px;
+    // @extend %flex;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: 480px) {
+      display: grid;
+      grid-template: repeat(4, 224px) / repeat(1, 450px);
+      gap: 30px;
+      justify-content: center;
+    }
 
     @media screen and (min-width: 768px) {
       grid-template: repeat(2, 224px) / repeat(2, 354px);
@@ -22,6 +30,8 @@
   }
 
   &__item {
+    // @include size(100%, 120px);
+
     &::before {
       content: "";
 
@@ -30,6 +40,18 @@
       display: block;
 
       background: center no-repeat #f5f4fa;
+
+      // @media screen and (min-width: 480px) {
+      //   @include size(450px, 120px)
+      // }
+
+      // @media screen and (min-width: 480px) {
+      //   @include size(354px, 120px)
+      // }
+
+      // @media screen and (min-width: 480px) {
+      //   @include size(270px, 120px)
+      // }
     }
 
     &:nth-child(1)::before {
@@ -67,5 +89,17 @@
 
     @include text-styles(14px, 1.71);
     color: #757575;
+
+    @media screen and (min-width: 480px) {
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
   }
 }
