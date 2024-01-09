@@ -1,15 +1,27 @@
 .adventage {
+  overflow-x: hidden;
   @include block-model(0, 94px 0);
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   &__list {
-    @extend %flex;
+    display: grid;
+    grid-template: repeat(4, 224px) / repeat(1, 450px);
     gap: 30px;
-    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      grid-template: repeat(2, 224px) / repeat(2, 354px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template: repeat(1, 1fr) / repeat(4, 270px);
+    }
   }
 
   &__item {
-    // opacity: 0;  
-
     &::before {
       content: "";
 
@@ -18,10 +30,6 @@
       display: block;
 
       background: center no-repeat #f5f4fa;
-
-      @media screen and (min-width: 480px) {
-        @include size(450px, 120px);
-      }
     }
 
     &:nth-child(1)::before {
@@ -47,10 +55,15 @@
     @include text-styles(14px, 1.14);
     color: $text-color;
     font-weight: 700;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__description {
-    max-width: 270px;
+    max-width: 100%;
 
     @include text-styles(14px, 1.71);
     color: #757575;

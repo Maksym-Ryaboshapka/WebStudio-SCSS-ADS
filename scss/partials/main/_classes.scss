@@ -1,5 +1,10 @@
 .classes {
   @include block-model(0, 0 0 94px);
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 
   &__title {
     @include block-model(0 0 50px);

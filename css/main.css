@@ -1,4 +1,4 @@
-.modal__flex, .modal__close, .footer__btn, .footer__container, .clients__list, .team__list, .classes__list, .adventage__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social, .contacts-list__link {
+.modal__flex, .modal__close, .footer__btn, .footer__container, .clients__list, .team__list, .classes__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social, .contacts-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,14 +501,30 @@ body {
 }
 
 .adventage {
+  overflow-x: hidden;
   margin: 0;
   padding: 94px 0;
   border: none;
   border-radius: 0;
 }
+.adventage::-webkit-scrollbar {
+  display: none;
+}
 .adventage__list {
+  display: grid;
+  grid-template: repeat(4, 224px)/repeat(1, 450px);
   gap: 30px;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .adventage__list {
+    grid-template: repeat(2, 224px)/repeat(2, 354px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adventage__list {
+    grid-template: repeat(1, 1fr)/repeat(4, 270px);
+  }
 }
 .adventage__item::before {
   content: "";
@@ -520,12 +536,6 @@ body {
   border-radius: 0;
   display: block;
   background: center no-repeat #f5f4fa;
-}
-@media screen and (min-width: 480px) {
-  .adventage__item::before {
-    width: 450px;
-    height: 120px;
-  }
 }
 .adventage__item:nth-child(1)::before {
   background-image: url(../../images/icons/antenna.svg);
@@ -549,9 +559,15 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   font-weight: 700;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .adventage__title {
+    text-align: left;
+  }
 }
 .adventage__description {
-  max-width: 270px;
+  max-width: 100%;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -563,6 +579,12 @@ body {
   padding: 0 0 94px;
   border: none;
   border-radius: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .classes {
+    display: block;
+  }
 }
 .classes__title {
   margin: 0 0 50px;
