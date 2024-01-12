@@ -2,6 +2,11 @@
 
 ::-webkit-scrollbar {
   @include size(15px);
+  // display: none;
+
+  // @media screen and (min-width: 1200px) {
+  //   display: block;
+  // }
 
   &-track {
     background-color: #f1f1f1;

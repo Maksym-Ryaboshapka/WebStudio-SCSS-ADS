@@ -1,4 +1,5 @@
 .clients {
+  // overflow: hidden;
   @include block-model(0, 94px 0);
 
   &__title {
@@ -11,20 +12,37 @@
   }
 
   &__list {
-    @extend %flex;
-    gap: 30px;
-  }
+    display: grid;
+    grid-template: repeat(3, 85px) / repeat(2, 140px);
+    gap: 15px;  
+    justify-content: center;
 
-  &__item {
-    @include size(170px);
+    @media screen and (min-width: 480px) {
+      grid-template: repeat(3, 92px) / repeat(2, 210px);
+      gap: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      grid-template: repeat(2, 92px) / repeat(3, 226px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template: repeat(1, 92px) / repeat(6, 170px);
+    }
   }
 
   &__focus {
-    @include block-model(0, 16px 32px, 1px solid $grey, 4px);
+    @include block-model(0, 12px 24px, 1px solid $grey, 4px);
+    
+    @extend %flex;
 
     cursor: pointer;
 
     transition: border $transition;
+
+    @media screen and (min-width: 480px) {
+      @include block-model(0, 16px 32px, 1px solid $grey, 4px);
+    }
 
     &:hover,
     &:focus {
@@ -38,14 +56,11 @@
   }
 
   &__icon {
-    outline: none;
-
-    transition: fill $transition;
-  }
-
-  &__icon {
     @include size(106px, 60px);
 
     fill: $grey;
+    outline: none;
+
+    transition: fill $transition;
   }
 }

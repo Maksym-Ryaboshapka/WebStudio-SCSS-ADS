@@ -1,4 +1,4 @@
-.modal__flex, .modal__close, .footer__btn, .footer__container, .clients__list, .team__list, .classes__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social, .contacts-list__link {
+.modal__flex, .modal__close, .footer__btn, .footer__container, .clients__focus, .team__list, .classes__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social, .contacts-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,14 +501,11 @@ body {
 }
 
 .adventage {
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   padding: 94px 0;
   border: none;
   border-radius: 0;
-}
-.adventage::-webkit-scrollbar {
-  display: none;
 }
 .adventage__list {
   display: flex;
@@ -762,19 +759,42 @@ body {
   font-weight: 700;
 }
 .clients__list {
-  gap: 30px;
+  display: grid;
+  grid-template: repeat(3, 85px)/repeat(2, 140px);
+  gap: 15px;
+  justify-content: center;
 }
-.clients__item {
-  width: 170px;
-  height: auto;
+@media screen and (min-width: 480px) {
+  .clients__list {
+    grid-template: repeat(3, 92px)/repeat(2, 210px);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__list {
+    grid-template: repeat(2, 92px)/repeat(3, 226px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    grid-template: repeat(1, 92px)/repeat(6, 170px);
+  }
 }
 .clients__focus {
   margin: 0;
-  padding: 16px 32px;
+  padding: 12px 24px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .clients__focus {
+    margin: 0;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+  }
 }
 .clients__focus:hover, .clients__focus:focus {
   margin: 0;
@@ -786,13 +806,11 @@ body {
   fill: #2196f3;
 }
 .clients__icon {
-  outline: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
+  outline: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
