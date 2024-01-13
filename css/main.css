@@ -1,4 +1,4 @@
-.modal__flex, .modal__close, .footer__btn, .footer__container, .clients__focus, .team__list, .classes__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social, .contacts-list__link {
+.modal__flex, .modal__close, .footer__btn, .footer__flex, .clients__focus, .team__list, .classes__list, .hero__flex, .header__pages, .header__navigation, .header__container, .social__icon, .social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,11 +165,18 @@ body {
   display: flex;
 }
 .logo__span {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-family: "Raleway";
   font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  .logo__span {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 }
 .logo__span--blue {
   color: #2196f3;
@@ -215,6 +222,8 @@ body {
 }
 .contacts-list__link {
   color: #757575;
+  display: flex;
+  align-items: center;
   gap: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -820,12 +829,55 @@ body {
   border-radius: 0;
   background-color: #2f303a;
 }
-.footer__container {
-  gap: 90px;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin: 0 0 60px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    gap: 70px;
+  }
+}
+.footer__box > .footer__flex {
+  margin: 0 0 60px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__box > .footer__flex {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
 }
 .footer__flex {
-  display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__flex {
+    align-items: flex-start;
+  }
 }
 .footer__adress {
   margin: 20px 0 9px;
@@ -850,9 +902,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-.footer__form {
-  display: flex;
-  align-items: flex-end;
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .footer__label {
   margin: 0 0 20px;
@@ -867,7 +921,7 @@ body {
   text-transform: uppercase;
 }
 .footer__input {
-  width: 356px;
+  width: 100%;
   height: 50px;
   margin: 0;
   padding: 0 16px;
@@ -881,11 +935,23 @@ body {
   color: rgb(255, 255, 255);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+    height: 50px;
+  }
+}
 .footer__input:focus {
   margin: 0;
-  padding: 0;
+  padding: 0 16px;
   border: 1px solid #2196f3;
-  border-radius: 0;
+  border-radius: 4px;
 }
 .footer__input::-moz-placeholder {
   font-size: 16px;
@@ -902,8 +968,8 @@ body {
 .footer__btn {
   width: 200px;
   height: 50px;
-  margin: 0 0 0 12px;
-  padding: 10px 28px;
+  margin: 20px auto;
+  padding: 10px 28px 10px 31px;
   border: none;
   border-radius: 4px;
   background-color: #2196f3;
@@ -913,6 +979,14 @@ body {
 }
 .footer__btn:hover, .footer__btn:focus {
   transform: scale(1.075);
+}
+@media screen and (min-width: 1200px) {
+  .footer__btn {
+    margin: 0 0 0 12px;
+    padding: 10px 28px 10px 31px;
+    border: none;
+    border-radius: 4px;
+  }
 }
 .footer__span--form {
   font-size: 16px;

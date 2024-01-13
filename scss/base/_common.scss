@@ -2,11 +2,6 @@
 
 ::-webkit-scrollbar {
   @include size(15px);
-  // display: none;
-
-  // @media screen and (min-width: 1200px) {
-  //   display: block;
-  // }
 
   &-track {
     background-color: #f1f1f1;
@@ -58,21 +53,25 @@ body {
   display: flex;
 
   &__span {
-    @include text-styles(26px, 1.19);
+    @include text-styles(24px, 1.19);
     font-family: "Raleway";
     font-weight: 700;
-  }
 
-  &__span--blue {
-    color: $blue;
-  }
+    @media screen and (min-width: 1200px) {
+      @include text-styles(26px, 1.19);
+    }
 
-  &__span--black {
-    color: #000000;
-  }
+    &--blue {
+      color: $blue;
+    }
 
-  &__span--white {
-    color: $light-text-color;
+    &--black {
+      color: #000000;
+    }
+
+    &--white {
+      color: $light-text-color;
+    }
   }
 }
 
@@ -111,7 +110,8 @@ body {
   &__link {
     color: #757575;
 
-    @extend %flex;
+    display: flex;
+    align-items: center;
     gap: 10px;
 
     transition: color $transition;
