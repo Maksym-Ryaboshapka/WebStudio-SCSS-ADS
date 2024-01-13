@@ -263,6 +263,64 @@
         </form>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal__container">
+          <form class="modal__form">
+            <button class="modal__close" data-modal-close type="button">
+              <svg class="modal__cross">
+                <use href="./images/icons/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <fieldset class="modal__fieldset">
+              <legend class="modal__legend">Залиште свої дані, ми вам передзвонимо</legend>
+              <ul class="modal__list">	
+                <li class="modal__item">
+                  <label class="modal__label" for="name">Ім'я</label>
+                  <div class="modal__position">
+                    <input class="modal__input" id="name" required autocomplete="off">
+                    <svg class="modal__svg">
+                      <use href="./images/icons/sprite.svg#icon-person"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="modal__item">
+                  <label class="modal__label" for="tel">Телефон</label>
+                  <div class="modal__position">
+                    <input class="modal__input" id="tel" type="tel" required autocomplete="off">
+                    <svg class="modal__svg">
+                      <use href="./images/icons/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="modal__item">
+                  <label class="modal__label" for="mail">Пошта</label>
+                  <div class="modal__position">
+                    <input class="modal__input" id="mail" type="email" required autocomplete="off">
+                    <svg class="modal__svg">
+                      <use href="./images/icons/sprite.svg#icon-email"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+              <label class="modal__label" for="textarea">Коментар</label>
+              <textarea class="modal__textarea" id="textarea" placeholder="Введіть текст"></textarea>
+            </fieldset>
+            <div class="modal__flex">
+              <input class="modal__checkbox" id="checkbox" name="checkbox" type="checkbox" required><span class="modal__check">
+                <svg class="modal__svg--check">
+                  <use href="./images/icons/sprite.svg#icon-check"></use>
+                </svg></span><span class="modal__fake">
+                <svg class="modal__svg--fake">
+                  <use href="./images/icons/sprite.svg#icon-border"></use>
+                </svg></span>
+              <label class="modal__label--checkbox" for="checkbox"><span class="modal__span">Погоджуюся з розсилкою та приймаю</span><a class="modal__conditions" href="./index.html">Умови договору</a></label>
+            </div>
+            <button class="modal__btn" type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="./js/modal.js"></script>
