@@ -5,8 +5,8 @@
 				button.modal__close(data-modal-close type="button")
 					svg.modal__cross
 						use(href="./images/icons/sprite.svg#icon-cross")
-				fieldset.modal__fieldset
-					legend.modal__legend Залиште свої дані, ми вам передзвонимо
+				.modal__fieldset
+					legend.modal__title Залиште свої дані, ми вам передзвонимо
 					ul.modal__list 	
 						each modalInputs in modalInputsVar
 							li.modal__item
@@ -19,13 +19,14 @@
 					textarea.modal__textarea(id="textarea" placeholder="Введіть текст")
 
 				.modal__flex
-					input.modal__checkbox(id="checkbox" name="checkbox" type="checkbox" required)
-					span.modal__check
-						svg.modal__svg--check
-							use(href="./images/icons/sprite.svg#icon-check")
-					span.modal__fake
-						svg.modal__svg--fake
-							use(href="./images/icons/sprite.svg#icon-border")
+					.modal__block
+						input.modal__checkbox(id="checkbox" name="checkbox" type="checkbox" required)
+						span.modal__check
+							svg.modal__svg--check
+								use(href="./images/icons/sprite.svg#icon-check")
+						span.modal__fake
+							svg.modal__svg--fake
+								use(href="./images/icons/sprite.svg#icon-border")
 					label.modal__label--checkbox(for="checkbox")
 						span.modal__span Погоджуюся з розсилкою та приймаю
 						a.modal__conditions(href="./index.html") Умови договору

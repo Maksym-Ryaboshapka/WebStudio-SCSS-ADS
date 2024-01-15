@@ -1031,7 +1031,7 @@ body {
   top: 50%;
   left: 50%;
   z-index: 1001;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin: 0;
   padding: 40px;
@@ -1047,6 +1047,13 @@ body {
   .modal {
     width: 450px;
     height: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 100%;
+    max-height: 581px;
   }
 }
 .modal::-webkit-scrollbar {
@@ -1072,8 +1079,8 @@ body {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__legend {
-  margin: 0 0 12px;
+.modal__title {
+  margin: 0 auto 12px;
   padding: 0;
   border: none;
   border-radius: 0;
@@ -1085,6 +1092,11 @@ body {
   text-align: center;
   font-weight: 700;
 }
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    max-width: 448px;
+  }
+}
 .modal__list {
   margin: 0 0 10px;
   padding: 0;
@@ -1093,6 +1105,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.modal__item {
+  width: 100%;
+  height: auto;
 }
 .modal__label {
   margin: 0 0 4px;
@@ -1106,10 +1122,12 @@ body {
 }
 .modal__position {
   position: relative;
+  width: 100%;
+  height: auto;
   display: inline-block;
 }
 .modal__input {
-  width: 320px;
+  width: 100%;
   height: 40px;
   margin: 0;
   padding: 11px 12px 11px 42px;
@@ -1122,6 +1140,12 @@ body {
 @media screen and (min-width: 480px) {
   .modal__input {
     width: 370px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__input {
+    width: 448px;
     height: 40px;
   }
 }
@@ -1144,7 +1168,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__textarea {
-  width: 370px;
+  width: 100%;
   height: 120px;
   margin: 0;
   padding: 12px 16px;
@@ -1156,6 +1180,18 @@ body {
   letter-spacing: 0.12px;
   color: #212121;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal__textarea {
+    width: 370px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__textarea {
+    width: 448px;
+    height: 120px;
+  }
 }
 .modal__textarea:focus {
   margin: 0;
@@ -1176,21 +1212,60 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__flex {
-  position: relative;
   margin: 20px 0 30px;
   padding: 0;
   border: none;
   border-radius: 0;
   gap: 8.5px;
 }
+@media screen and (min-width: 480px) {
+  .modal__flex {
+    position: static;
+  }
+}
+.modal__block {
+  position: relative;
+}
+@media screen and (min-width: 336px) {
+  .modal__block {
+    margin: 0;
+    padding: 17px 0 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__block {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
 .modal__checkbox {
   position: absolute;
-  left: 19px;
+  left: 0;
   z-index: 1;
   width: 16px;
   height: 15px;
   opacity: 0;
   cursor: pointer;
+}
+@media screen and (min-width: 336px) {
+  .modal__checkbox {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__checkbox {
+    top: auto;
+    left: 46px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox {
+    left: 0;
+  }
 }
 .modal__checkbox:checked + .modal__check {
   opacity: 1;
@@ -1198,28 +1273,45 @@ body {
 .modal__checkbox:checked ~ .modal__fake {
   opacity: 0;
 }
-.modal__fake {
+.modal__svg--fake {
   width: 16px;
   height: 15px;
-}
-.modal__svg--fake {
-  width: 100%;
-  height: 100%;
 }
 .modal__check {
   position: absolute;
-  left: 19px;
+  left: 0;
   width: 16px;
   height: 15px;
   opacity: 0;
+}
+@media screen and (min-width: 336px) {
+  .modal__check {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__check {
+    top: auto;
+    left: 46px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__check {
+    left: 0;
+  }
 }
 .modal__svg--check {
   width: 100%;
   height: 100%;
 }
 .modal__label--checkbox {
-  display: flex;
-  gap: 5.5px;
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  .modal__label--checkbox {
+    display: flex;
+    gap: 5.5px;
+  }
 }
 .modal__span {
   font-size: 12px;
@@ -1228,11 +1320,24 @@ body {
   color: #757575;
 }
 .modal__conditions {
+  position: absolute;
+  top: 22px;
+  left: 60px;
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.42px;
   color: #2196f3;
   text-decoration: underline;
+}
+@media screen and (min-width: 336px) {
+  .modal__conditions {
+    left: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal__conditions {
+    position: static;
+  }
 }
 .modal__btn {
   margin: 0 auto;
