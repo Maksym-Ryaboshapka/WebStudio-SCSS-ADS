@@ -1,5 +1,5 @@
 .hero {
-  @include block-model(0, 200px 0);
+  @include block-model(0, 118px 0);
 
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../images/main/hero-mobile.webp) center / cover no-repeat #2f303a;
@@ -10,6 +10,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    @include block-model(0, 200px 0);
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/main/hero-desktop.webp) center / cover no-repeat #2f303a;
   }

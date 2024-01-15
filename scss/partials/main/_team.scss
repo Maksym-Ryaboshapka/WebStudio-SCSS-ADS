@@ -1,5 +1,9 @@
 .team {
-  @include block-model(0, 94px 0);
+  @include block-model(0, 60px 0);
+
+  @media screen and (min-width: 1200px) {
+    @include block-model(0, 94px 0);
+  }
 
   background-color: #f5f4fa;
 
