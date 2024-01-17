@@ -581,7 +581,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 90px;
   }
@@ -594,6 +594,7 @@ body {
     border-radius: 0;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 165px;
   }
 }
