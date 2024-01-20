@@ -1,16 +1,39 @@
 .gallery {
-  @include block-model(0, 0 0 94px);
+  @include block-model(0, 0 0 60px);
+
+  overflow: hidden;
+
+  @media screen and (min-width: 1200px) {
+    @include block-model(0, 0 0 94px);
+  }
 
   &__list {
-    @extend %flex;
-    flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 480px) {
+      display: grid;
+      grid-template: repeat(9, 404px) / repeat(1, 450px);
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      grid-template: repeat(5, 440px) / repeat(2, 354px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template: repeat(3, 404px) / repeat(3, 370px);
+    }
   }
 
   &__item {
     @include block-model(0, 0, 1px solid #eeeeee);
+    @include size(100%);
 
-    flex-basis: calc((100% - 60px) / 3);
+    // @media screen and (min-width: 480px) {
+    //   @include size(450px, 404px);
+    // }
+
+    // flex-basis: calc((100% - 60px) / 3);
   }
 
   &__focus {
@@ -29,12 +52,13 @@
 
     &:hover .gallery__text,
     &:focus .gallery__text {
-      top: 63px;
+      // top: 63px;
+      top: 77px;
     }
   }
 
   &__box {
-    @include block-model(0, 20px 20px 20px 24px);
+    @include block-model(0, 20px 24px);
   }
 
   .gallary__overflow {
@@ -49,7 +73,7 @@
       top: 294px;
       left: 0;
 
-      @include size(370px, 294px);
+      @include size(100%, 294px);
       display: block;
 
       background-color: rgba(33, 150, 243, 0.9);
@@ -59,7 +83,8 @@
   }
 
   &__img {
-    @include size(368px, 294px);
+    // @include size(368px, 294px);
+    @include size(450px, 294px);
   }
 
   &__text {
@@ -67,7 +92,8 @@
     top: 294px;
     left: 24px;
 
-    max-width: 322px;
+    // max-width: 322px;
+    max-width: 402px;
 
     @include text-styles(18px, 1.55, 0.54px);
     color: $light-text-color;
