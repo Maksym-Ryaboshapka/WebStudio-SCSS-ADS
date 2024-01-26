@@ -82,7 +82,7 @@ body {
     @include block-model(0 0 0 auto);
     display: none;
 
-    align-items: center;
+    align-items: flex-start;
 
     @media screen and (min-width: 768px) {
       display: flex;

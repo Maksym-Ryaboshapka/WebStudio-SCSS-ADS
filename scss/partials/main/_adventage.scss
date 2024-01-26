@@ -29,8 +29,6 @@
   }
 
   &__item {
-    // @include size(100%, 120px);
-
     &::before {
       content: "";
 
@@ -39,18 +37,6 @@
       display: block;
 
       background: center no-repeat #f5f4fa;
-
-      // @media screen and (min-width: 480px) {
-      //   @include size(450px, 120px)
-      // }
-
-      // @media screen and (min-width: 480px) {
-      //   @include size(354px, 120px)
-      // }
-
-      // @media screen and (min-width: 480px) {
-      //   @include size(270px, 120px)
-      // }
     }
 
     &:nth-child(1)::before {

@@ -39,13 +39,6 @@
     }
   }
 
-  &__btn {
-    &:hover .header__line,
-    &:focus .header__line {
-      background-color: $blue;
-    }
-  }
-
   &__burger {
     display: flex;
     flex-direction: column;

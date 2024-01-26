@@ -27,17 +27,17 @@
 
     @media screen and (min-width: 480px) {
       display: grid;
-      grid-template: repeat(4, 622px) / repeat(1, 450px);
+      grid-template: repeat(4, 1fr) / repeat(1, 450px);
     }
 
     @media screen and (min-width: 768px) {
       display: grid;
-      grid-template: repeat(2, 536px) / repeat(2, 354px);
+      grid-template: repeat(2, 1fr) / repeat(2, 354px);
     }
 
     @media screen and (min-width: 1200px) {
       display: grid;
-      grid-template: repeat(1, 428px) / repeat(4, 270px);
+      grid-template: repeat(1, 1fr) / repeat(4, 270px);
     }
   }
 
@@ -52,11 +52,7 @@
       @include block-model(0, 0 0 30px, none, 0 0 4px 4px);
     }
   }
-
-  &__img {
-    @include size(270px, 260px);
-  }
-
+  
   &__subtitle {
     @include block-model(30px 0 10px);
 

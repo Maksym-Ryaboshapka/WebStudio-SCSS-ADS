@@ -17,7 +17,7 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__box"><a class="logo" href="./index.html"><span class="logo__span logo__span--blue">Web</span><span class="logo__span logo__span--black">Studio</span></a>
-          <button class="header__btn">
+          <button class="header__btn" data-menu-open>
             <ul class="header__burger">
               <li class="header__line"></li>
               <li class="header__line"></li>
@@ -323,8 +323,31 @@
         </div>
       </div>
     </div>
+    <div class="menu is-hidden" data-menu>
+      <button class="menu__close" data-menu-close>
+        <svg class="menu__cross">
+          <use href="./images/icons/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="menu__pages"> 
+        <li class="menu__page"> <a class="menu__link menu__link--active" href="./index.html">Студія</a></li>
+        <li class="menu__page"> <a class="menu__link menu__link--portfolio" href="./portfolio.html">Портфоліо</a></li>
+        <li class="menu__page"> <a class="menu__link menu__link--contacts" href="./index.html">Контакти</a></li>
+      </ul>
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__contact menu__contact--tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="menu__item"><a class="menu__contact undefined" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <ul class="menu__socials"> 
+        <li class="menu__social"> <a class="menu__link--social" href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li class="menu__social"> <a class="menu__link--social" href="https://twitter.com/" target="_blank">Twitter</a></li>
+        <li class="menu__social"> <a class="menu__link--social" href="https://uk-ua.facebook.com" target="_blank">Facebook</a></li>
+        <li class="menu__social"> <a class="menu__link--social" href="https://ua.linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

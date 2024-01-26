@@ -15,24 +15,34 @@
 
     @media screen and (min-width: 480px) {
       display: grid;
-      grid-template: repeat(9, 404px) / repeat(1, 450px);
+      grid-template: repeat(9, auto) / repeat(1, 450px);
     }
 
     @media screen and (min-width: 768px) {
-      grid-template: repeat(5, 440px) / repeat(2, 354px);
+      grid-template: repeat(5, auto) / repeat(2, 354px);
     }
 
     @media screen and (min-width: 1200px) {
-      grid-template: repeat(3, 404px) / repeat(3, 370px);
+      grid-template: repeat(3, auto) / repeat(3, 370px);
     }
   }
 
   &__item {
     @include block-model(0, 0, 1px solid #eeeeee);
-    @include size(100%);
+    // @include size(100%); 
+
+    // @media screen and (min-width: 480px) {
+    //   @include size(450px); 
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //   @include size(354px); 
+    // }
   }
 
   &__focus {
+    @include size(auto, 100%);
+
     transition: box-shadow $transition;
 
     &:hover,
@@ -73,33 +83,42 @@
       content: "";
 
       position: absolute;
-      top: 294px;
+      top: 500px;
       left: 0;
 
-      @include size(100%, 294px);
-      display: block;
+      @include size(100%, 100%);
+      display: none;
 
       background-color: rgba(33, 150, 243, 0.9);
 
       transition: top $transition;
+
+      @media screen and (min-width: 480px) {
+        display: block;
+      }
     }
   }
 
   &__img {
-    @include size(450px, 294px);
+    @include size(450px);
   }
 
   &__text {
     position: absolute;
-    top: 294px;
+    top: 500px;
     left: 24px;
 
     max-width: 402px;
+    display: none;
 
     @include text-styles(18px, 1.55, 0.54px);
     color: $light-text-color;
 
     transition: top $transition;
+
+    @media screen and (min-width: 480px) {
+      display: block;
+    }
 
     @media screen and (min-width: 768px) {
       max-width: 306px;
