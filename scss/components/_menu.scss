@@ -94,11 +94,19 @@
   }
 
   &__list {
-    @include block-model(calc(100vh - 500px) 0 64px);
+    @include block-model(0 0 32px);
 
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @media screen and (min-height: 450px) {
+      @include block-model(0 0 64px);
+    }
+
+    @media screen and (min-height: 512px) {
+      @include block-model(calc(100vh - 500px) 0 64px);
+    }
   }
 
   &__contact {

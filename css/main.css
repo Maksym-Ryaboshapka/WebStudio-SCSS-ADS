@@ -1491,13 +1491,29 @@ body {
   transform: translateY(-50%);
 }
 .menu__list {
-  margin: calc(100vh - 500px) 0 64px;
+  margin: 0 0 32px;
   padding: 0;
   border: none;
   border-radius: 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+@media screen and (min-height: 450px) {
+  .menu__list {
+    margin: 0 0 64px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+}
+@media screen and (min-height: 512px) {
+  .menu__list {
+    margin: calc(100vh - 500px) 0 64px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
 }
 .menu__contact {
   font-size: 24px;
