@@ -16,10 +16,10 @@
     visibility: hidden;
   }
 
-  @include block-model(0, 48px 83px 48px 40px);
+  @include block-model(0, 48px 40px);
 
-  overflow-y: scroll;
-  overflow-x: hidden;
+  // overflow-y: scroll;
+  // overflow-x: hidden;
   background-color: $light-text-color;
 
   &::-webkit-scrollbar {
@@ -94,7 +94,7 @@
   }
 
   &__list {
-    @include block-model(302px 0 64px);
+    @include block-model(calc(100vh - 500px) 0 64px);
 
     display: flex;
     flex-direction: column;
@@ -114,18 +114,22 @@
     }
 
     &--tel {
-      @include text-styles(34px, normal, 0.68px);
+      @include text-styles(8vw, normal, 0.68px);
       color: $blue;
+
+      @media screen and (min-width: 480px) {
+        @include text-styles(34px, normal, 0.68px);
+      }
     }
   }
 
   &__socials {
-		@include block-model(0, 4px 0);
+    @include block-model(0, 4px 0);
 
     display: flex;
     gap: 20px;
-		flex-wrap: wrap;
+    flex-wrap: wrap;
 
-		overflow: hidden;
+    overflow: hidden;
   }
 }
