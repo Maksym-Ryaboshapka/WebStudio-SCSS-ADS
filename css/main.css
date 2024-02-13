@@ -466,19 +466,30 @@ body {
   padding: 118px 0;
   border: none;
   border-radius: 0;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/main/hero-bg@2x.webp) center/cover no-repeat #2f303a;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/main/hero-bg@1x.webp) center/cover no-repeat #2f303a;
+}
+@media (min-display-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/main/hero-bg@2x.webp) center/cover no-repeat #2f303a;
+  }
 }
 @media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/main/hero-bg@1x.webp) center/cover no-repeat #2f303a;
+  }
+}
+@media screen and (min-width: 768px) and (min-display-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/main/hero-bg@2x.webp) center/cover no-repeat #2f303a;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    margin: 0;
-    padding: 200px 0;
-    border: none;
-    border-radius: 0;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/main/hero-bg@1x.webp) center/cover no-repeat #2f303a;
+  }
+}
+@media screen and (min-width: 1200px) and (min-display-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2ddpx) {
+  .hero {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/main/hero-bg@2x.webp) center/cover no-repeat #2f303a;
   }
 }

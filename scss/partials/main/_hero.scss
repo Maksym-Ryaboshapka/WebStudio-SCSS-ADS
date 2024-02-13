@@ -2,17 +2,43 @@
   @include block-model(0, 118px 0);
 
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/mobile/main/hero-bg@2x.webp) center / cover no-repeat #2f303a;
+    url(../../images/mobile/main/hero-bg@1x.webp) center / cover no-repeat
+      #2f303a;
+
+  @media (min-display-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/mobile/main/hero-bg@2x.webp) center / cover no-repeat
+        #2f303a;
+  }
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/tablet/main/hero-bg@2x.webp) center / cover no-repeat #2f303a;
+      url(../../images/tablet/main/hero-bg@1x.webp) center / cover no-repeat
+        #2f303a;
+
+    @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/tablet/main/hero-bg@2x.webp) center / cover no-repeat
+          #2f303a;
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    @include block-model(0, 200px 0);
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/desktop/main/hero-bg@2x.webp) center / cover no-repeat #2f303a;
+      url(../../images/desktop/main/hero-bg@1x.webp) center / cover no-repeat
+        #2f303a;
+
+    @media (min-display-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ddpx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/desktop/main/hero-bg@2x.webp) center / cover no-repeat
+          #2f303a;
+    }
   }
 
   &__flex {
