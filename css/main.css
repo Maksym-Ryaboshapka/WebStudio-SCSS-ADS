@@ -485,6 +485,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    margin: 0;
+    padding: 200px 0;
+    border: none;
+    border-radius: 0;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/main/hero-bg@1x.webp) center/cover no-repeat #2f303a;
   }
 }
